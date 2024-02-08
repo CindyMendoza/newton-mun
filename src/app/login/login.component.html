@@ -1,8 +1,23 @@
-<div class="bg-blue-500 text-white p-4">
-    <input [(ngModel)]="username" placeholder="Usuario" />
-    <input [(ngModel)]="password" placeholder="Contraseña" type="password" />
-    <button (click)="login()">Iniciar sesión</button>
+<div class="flex h-screen items-center justify-center">
+    <div class="bg-gray-200 p-8 rounded-lg shadow-md">
+        <form class="max-w-md mx-auto">
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Username:</label>
+                <input [(ngModel)]="username" placeholder="Username" name="username" type="text"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Password:</label>
+                <input [(ngModel)]="password" placeholder="Password" name="password" type="password"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="flex items-center justify-between">
+                <button (click)="login()"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="button">
+                    Login
+                </button>
+            </div>
+        </form>
+    </div>
 </div>
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-</h1>
