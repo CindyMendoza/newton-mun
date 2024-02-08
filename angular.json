@@ -44,7 +44,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/",
+              "baseHref": "/newton-mun/",
               "outputPath": "dist/"
             },
             "development": {
