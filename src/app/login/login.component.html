@@ -1,6 +1,6 @@
 <div class="flex h-screen items-center justify-center">
-    <div class="bg-gray-200 p-8 rounded-lg shadow-md">
-        <form class="max-w-md mx-auto">
+    <div class="bg-gray-100 p-8 rounded-lg shadow-md">
+        <form class="w-80 mx-auto">
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2">Username:</label>
                 <input [(ngModel)]="username" placeholder="Username" name="username" type="text"
@@ -13,10 +13,11 @@
             </div>
             <div class="flex items-center justify-between">
                 <button (click)="login()"
-                    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    class="bg-green-1 hover:bg-green-2 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                     type="button">
                     Login
                 </button>
+                
             </div>
         </form>
     </div>
