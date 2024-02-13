@@ -20,6 +20,9 @@ module.exports = {
         stone: {
           1: "#2b2b2b",
         },
+        white: {
+          1: "#ffffff",
+        },
       },
     },
   },

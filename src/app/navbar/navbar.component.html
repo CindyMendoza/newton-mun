@@ -1,14 +1,15 @@
-<header class="bg-white">
+<header class="bg-green-4">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
             <div class="flex-1 md:flex md:items-center md:gap-12">
                 <a class="block text-teal-600" href="#">
                     <span class="sr-only">Home</span>
-                    <img [ngSrc]="assets.logoNewton.url" alt="{{assets.logoNewton.alt}}" width="150" height="150"
-                        srcset="posicionamiento-web@1x.jpg 1x, 
-                    posicionamiento-web@2x.jpg 2x, 
-                    posicionamiento-web.jpg 360w, 
-                    posicionamiento-web.jpg 720w" sizes="(max-width: 480px) 360px, (max-width: 768px) 720px, 1024px">
+                    
+                    <picture>
+                        <source media="(max-width: 1023px)" srcset='../assets/images/navbar/logo-mob-header-newton-mun.png 1x, ../assets/images/navbar/logo-mob-header-newton-mun@2x.png 2x'>
+                        <source media="(min-width: 1024px)" srcset='../assets/images/navbar/logo-desk-header-newton-mun.png 1x, ../assets/images/navbar/logo-desk-header-newton-mun@2x.png 2x'>
+                        <img ngSrc="../assets/images/navbar/logo-mob-header-newton-mun.png"  alt="Logo de Newton">
+                    </picture>
 
                 </a>
             </div>
@@ -17,37 +18,37 @@
                 <nav aria-label="Global" class="hidden md:block">
                     <ul class="flex items-center gap-6 text-sm">
                         <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Home </a>
+                            <a class="text-white-1 transition hover:text-white-1/75" href="#"> Home </a>
                         </li>
 
                         <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> About us </a>
+                            <a class="text-white-1 transition hover:text-white-1/75" href="#"> About us </a>
                         </li>
 
                         <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Schedule </a>
+                            <a class="text-white-1 transition hover:text-white-1/75" href="#"> Schedule </a>
                         </li>
 
                         <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Committees </a>
+                            <a class="text-white-1 transition hover:text-white-1/75" href="#"> Committees </a>
                         </li>
 
                         <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Gallery </a>
+                            <a class="text-white-1 transition hover:text-white-1/75" href="#"> Gallery </a>
                         </li>
 
                         <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Facilities </a>
+                            <a class="text-white-1 transition hover:text-white-1/75" href="#"> Facilities </a>
                         </li>
                         <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Contact </a>
+                            <a class="text-white-1 transition hover:text-white-1/75" href="#"> Contact </a>
                         </li>
                     </ul>
                 </nav>
 
                 <div class="flex items-center gap-4">
                     <div class="sm:flex sm:gap-4">
-                        <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow" href="#">
+                        <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white-1 shadow" href="#">
                             Apply
                         </a>
 
