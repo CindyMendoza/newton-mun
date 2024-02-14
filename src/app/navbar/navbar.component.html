@@ -1,30 +1,31 @@
-<header class="">
+<header class="bg-green-1">
     <div class="mx-auto max-w-screen-xl py-4">
-        <div class="flex items-center justify-between">
-            <div class="flex-1 md:flex md:items-center md:gap-12">
-                <a class="block text-teal-600" href="#">
+        <div class="flex items-center justify-around md:justify-between">
+            <div class="md:flex md:items-center md:gap-12">
+                <a href="#" class="inline-block">
                     <span class="sr-only">Home</span>
 
-                    <!-- <picture>
+                    <picture class="inline-block">
                         <source media="(max-width: 1023px)"
                             srcset='../assets/images/navbar/logo-mob-header-newton-mun.png 1x, ../assets/images/navbar/logo-mob-header-newton-mun@2x.png 2x'>
                         <source media="(min-width: 1024px)"
                             srcset='../assets/images/navbar/logo-desk-header-newton-mun.png 1x, ../assets/images/navbar/logo-desk-header-newton-mun@2x.png 2x'>
-                        <img ngSrc="../assets/images/navbar/logo-mob-header-newton-mun.png" alt="Logo de Newton">
-                    </picture> -->
+                        <img ngSrc="../assets/images/navbar/logo-mob-header-newton-mun.png" alt="Logo de Newton"
+                            width="auto" height="auto">
+                    </picture>
 
                 </a>
             </div>
             <div class="flex items-center gap-4 block md:hidden">
                 <div class="sm:flex sm:gap-4">
-                    <a class="rounded-full bg-green-5 px-5 text-sm font-medium text-white-1 Montserrat-Semibold shadow"
+                    <a class="rounded-full bg-green-5 px-5 text-sm font-medium text-white-1 Montserrat-Semibold py-0.5"
                         href="#">
                         Apply
                     </a>
                 </div>
             </div>
             <div [class]="isOpen ? 'block' : 'hidden'"
-                class="bg-green-1 py-4 px-8 md:flex md:items-center md:gap-12 rounded-full  newton-navbar">
+                class="bg-green-1 py-4 px-8 md:flex md:items-center md:gap-12 md:rounded-full  newton-navbar">
                 <button (click)="toggleMenu()"
                     class="absolute top-0 right-0 p-2 text-white-1 hover:text-white-800 focus:outline-none md:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -34,50 +35,48 @@
                     </svg>
                 </button>
                 <nav aria-label="Global" class="">
-                    <ul class="flex flex-col md:flex-row items-center gap-6 text-sm">
+                    <ul class="flex flex-col mt-4 pt-4 md:pt-0 md:mt-0 md:flex-row md:items-center gap-6 text-sm">
                         <li>
-                            <a class="text-white-1 transition hover:text-white-1/75 Montserrat-Semibold" href="#"> Home
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" href="#"> Home
                             </a>
                         </li>
 
                         <li>
-                            <a class="text-white-1 transition hover:text-white-1/75 Montserrat-Semibold" href="#"> About
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" href="#"> About
                                 us </a>
                         </li>
 
                         <li>
-                            <a class="text-white-1 transition hover:text-white-1/75 Montserrat-Semibold" href="#">
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" href="#">
                                 Schedule </a>
                         </li>
 
                         <li>
-                            <a class="text-white-1 transition hover:text-white-1/75 Montserrat-Semibold" href="#">
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" href="#">
                                 Committees </a>
                         </li>
 
                         <li>
-                            <a class="text-white-1 transition hover:text-white-1/75 Montserrat-Semibold" href="#">
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" href="#">
                                 Gallery </a>
                         </li>
 
                         <li>
-                            <a class="text-white-1 transition hover:text-white-1/75 Montserrat-Semibold" href="#">
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" href="#">
                                 Facilities </a>
                         </li>
                         <li>
-                            <a class="text-white-1 transition hover:text-white-1/75 Montserrat-Semibold" href="#">
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" href="#">
                                 Contact </a>
                         </li>
                     </ul>
                 </nav>
 
-                <div class="flex items-center gap-4">
-                    <div class="sm:flex sm:gap-4">
-                        <a class="rounded-full bg-green-5 px-5 text-sm font-medium text-white-1 Montserrat-Semibold shadow"
-                            href="#">
-                            Apply
-                        </a>
-                    </div>
+                <div class="flex mt-4 pt-4 md:pt-0 md:mt-0">
+                    <a class="w-1/4 md:w-auto text-center rounded-full bg-green-5 px-5 py-0.5 text-sm text-white-1 Montserrat-Semibold hover:bg-green-5/75"
+                        href="#">
+                        Apply
+                    </a>
                 </div>
             </div>
             <div class="block md:hidden">
@@ -92,16 +91,4 @@
             </div>
         </div>
     </div>
-
 </header>
-
-
-<!-- <div [class]="isOpen ? 'block' : 'hidden'" class="fixed top-0 left-0 w-full h-full bg-green-1 z-50">
-    <button (click)="toggleMenu()"
-        class="absolute top-0 right-0 p-2 text-white-1 hover:text-white-800 focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-    </button>
-    
-</div> -->
