@@ -10,6 +10,21 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./Montserrat-Regular.eot');
+    src: url('./Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./Montserrat-Regular.woff2') format('woff2'),
+        url('./Montserrat-Regular.woff') format('woff'),
+        url('./Montserrat-Regular.ttf') format('truetype'),
+        url('./Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
 .Montserrat-Semibold{
     font-family: 'Montserrat-Semibold';
+}
+.Montserrat-Regular{
+    font-family: 'Montserrat-Regular';
 }
