@@ -1,8 +1,8 @@
-<header class="" [ngClass]="{'fixed top-0 left-0 right-0 z-50 header-fixed transition bg-green-1': isScrolled}" >
+<header class="" [ngClass]="{'fixed top-0 left-0 right-0 z-50 header-fixed transition bg-green-1': isScrolled}">
     <div class="mx-auto max-w-screen-xl py-4">
         <div class="flex items-center justify-around md:justify-between">
             <div class="md:flex md:items-center md:gap-12 pl-8">
-                <a routerLink="/home"  class="inline-block">
+                <a routerLink="/home" class="inline-block">
                     <span class="sr-only">Home</span>
 
                     <picture class="inline-block logo-navbar">
@@ -34,39 +34,40 @@
                             d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
+                
                 <nav aria-label="Global" class="">
                     <ul class="flex flex-wrap flex-col mt-4 pt-4 md:pt-0 md:mt-0 md:flex-row md:items-center gap-4 text-sm">
                         <li>
-                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" routerLink="/home"> Home
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" routerLinkActive="active" routerLink="/home" > Home
                             </a>
                         </li>
 
                         <li>
-                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" routerLink="/aboutus"> About
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" routerLink="/aboutus" routerLinkActive="active"> About
                                 us </a>
                         </li>
 
                         <li>
-                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" routerLink="/schedule">
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" routerLink="/schedule" routerLinkActive="active">
                                 Schedule </a>
                         </li>
 
                         <li>
-                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" href="#">
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" routerLink="/committees" routerLinkActive="active" >
                                 Committees </a>
                         </li>
 
                         <li>
-                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" href="#">
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" routerLink="/gallery" routerLinkActive="active">
                                 Gallery </a>
                         </li>
 
                         <li>
-                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" href="#">
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" routerLink="/facilities" routerLinkActive="active">
                                 Facilities </a>
                         </li>
                         <li>
-                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" href="#">
+                            <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" routerLink="/contact" routerLinkActive="active">
                                 Contact </a>
                         </li>
                     </ul>
@@ -81,8 +82,7 @@
             </div>
             <div class="block md:hidden">
 
-                <button (click)="toggleMenu()" [id]=""
-                    class="transition w-10  p-2 focus:outline-none">
+                <button (click)="toggleMenu()" [id]="" class="transition w-10  p-2 focus:outline-none">
                     <span class="block w-full h-0.5 bg-white-1 rounded-full"></span>
                     <span class="block w-full h-0.5 bg-white-1 mt-1 rounded-full"></span>
                     <span class="block w-full h-0.5 bg-white-1 mt-1 rounded-full"></span>

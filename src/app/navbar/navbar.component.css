@@ -1,4 +1,7 @@
-.header-fixed {
+.header-fixed {}
+
+.active {
+    color: rgb(255 255 255 / 1);
 }
 
 @media screen and (max-width: 767px) {
