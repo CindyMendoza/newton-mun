@@ -1,0 +1,15 @@
+.bg-home {}
+
+@media screen and (min-width: 768px) {
+    .bg-home {
+        background-image: url('/assets/images/home/header-bg-home-newton-mun-desk.jpg');
+
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bg-home {
+        background-image: url('/assets/images/home/header-bg-home-newton-mun-mob.jpg');
+    }
+}
