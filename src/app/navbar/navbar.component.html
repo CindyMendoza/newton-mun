@@ -1,4 +1,4 @@
-<header class="bg-green-1" [ngClass]="{'fixed top-0 left-0 right-0 z-50': isScrolled}" >
+<header class="" [ngClass]="{'fixed top-0 left-0 right-0 z-50 header-fixed transition bg-green-1': isScrolled}" >
     <div class="mx-auto max-w-screen-xl py-4">
         <div class="flex items-center justify-around md:justify-between">
             <div class="md:flex md:items-center md:gap-12 pl-8">
@@ -18,7 +18,7 @@
             </div>
             <div class="flex items-center gap-4 block md:hidden">
                 <div class="sm:flex sm:gap-4">
-                    <a class="rounded-full bg-green-5 px-5 text-sm font-medium text-white-1 Montserrat-Semibold py-0.5 transition hover:bg-green-5/75"
+                    <a class="rounded-full bg-green-5 px-5 text-sm font-medium text-white-1 Montserrat-Semibold py-0.5 transition hover:bg-green-5"
                         href="#">
                         Apply
                     </a>
@@ -82,7 +82,7 @@
             <div class="block md:hidden">
 
                 <button (click)="toggleMenu()" [id]=""
-                    class="transition hover:text-gray-600/75 w-10 bg-green-1 p-2 focus:outline-none">
+                    class="transition w-10  p-2 focus:outline-none">
                     <span class="block w-full h-0.5 bg-white-1 rounded-full"></span>
                     <span class="block w-full h-0.5 bg-white-1 mt-1 rounded-full"></span>
                     <span class="block w-full h-0.5 bg-white-1 mt-1 rounded-full"></span>

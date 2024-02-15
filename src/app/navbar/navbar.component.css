@@ -1,13 +1,4 @@
-/* .logo-navbar img{
-    width: 56px;
-    height: 46px;
-} */
-.fixed-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
+.header-fixed {
 }
 
 @media screen and (max-width: 767px) {
