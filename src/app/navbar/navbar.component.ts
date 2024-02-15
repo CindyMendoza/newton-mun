@@ -1,25 +1,29 @@
-import { Component,HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent implements OnInit{
+export class NavbarComponent implements OnInit {
   isOpen: boolean = false;
-  isSticky: boolean = false;
+  isScrolled: boolean = false;
 
   constructor() {}
 
-  ngOnInit(): void {}
-  
+  ngOnInit() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
   toggleMenu() {
-    this.isOpen = !this.isOpen
+    this.isOpen = !this.isOpen;
   }
-  
-  @HostListener('window:scroll', ['$event'])
-  checkScroll() {
-    const scrollPosition = window.pageYOffset;
-    this.isSticky = scrollPosition >= 50;
+
+  ngOnDestroy() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
+
+  private handleScroll = () => {
+    this.isScrolled = window.scrollY > 0;
+  };
 }

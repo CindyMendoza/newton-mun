@@ -1,4 +1,4 @@
-<header class="bg-green-1" [class.sticky]="isSticky">
+<header class="bg-green-1" [ngClass]="{'fixed top-0 left-0 right-0 z-50': isScrolled}" >
     <div class="mx-auto max-w-screen-xl py-4">
         <div class="flex items-center justify-around md:justify-between">
             <div class="md:flex md:items-center md:gap-12 pl-8">
