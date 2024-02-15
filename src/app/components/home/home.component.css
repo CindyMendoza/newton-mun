@@ -1,4 +1,6 @@
-.bg-home {}
+.bg-home {
+    background-position: left;
+}
 
 @media screen and (min-width: 768px) {
     .bg-home {

@@ -5,8 +5,8 @@
 @import 'assets/fonts/index.css';
 
 .bg-header {
-    /* background-size: cover; */
-    background-size: 100% auto; 
-    background-position: top center;
+    background-size: cover;
+    /* background-size: 100% auto;  */
+    
     background-repeat: no-repeat;
 }
