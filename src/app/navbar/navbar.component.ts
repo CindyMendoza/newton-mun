@@ -7,6 +7,7 @@ import { Component,HostListener, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit{
   isOpen: boolean = false;
+  isSticky: boolean = false;
 
   constructor() {}
 
@@ -16,4 +17,9 @@ export class NavbarComponent implements OnInit{
     this.isOpen = !this.isOpen
   }
   
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    const scrollPosition = window.pageYOffset;
+    this.isSticky = scrollPosition >= 50;
+  }
 }

@@ -1,5 +1,7 @@
-.newton-navbar {}
-
+/* .logo-navbar img{
+    width: 56px;
+    height: 46px;
+} */
 @media screen and (max-width: 767px) {
     .newton-navbar {
         border-radius: 0;

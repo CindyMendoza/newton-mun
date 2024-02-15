@@ -1,24 +1,24 @@
-<header class="bg-green-1">
+<header class="bg-green-1" [class.sticky]="isSticky">
     <div class="mx-auto max-w-screen-xl py-4">
         <div class="flex items-center justify-around md:justify-between">
             <div class="md:flex md:items-center md:gap-12 pl-8">
                 <a href="#" class="inline-block">
                     <span class="sr-only">Home</span>
 
-                    <picture class="inline-block">
+                    <picture class="inline-block logo-navbar">
                         <source media="(max-width: 1023px)"
                             srcset='../assets/images/navbar/logo-mob-header-newton-mun.png 1x, ../assets/images/navbar/logo-mob-header-newton-mun@2x.png 2x'>
                         <source media="(min-width: 1024px)"
                             srcset='../assets/images/navbar/logo-desk-header-newton-mun.png 1x, ../assets/images/navbar/logo-desk-header-newton-mun@2x.png 2x'>
-                        <img ngSrc="../assets/images/navbar/logo-mob-header-newton-mun.png" alt="Logo de Newton"
-                            width="auto" height="auto">
+                        <img src="../assets/images/navbar/logo-mob-header-newton-mun.png" alt="Logo de Newton"
+                            class="w-full">
                     </picture>
 
                 </a>
             </div>
             <div class="flex items-center gap-4 block md:hidden">
                 <div class="sm:flex sm:gap-4">
-                    <a class="rounded-full bg-green-5 px-5 text-sm font-medium text-white-1 Montserrat-Semibold py-0.5"
+                    <a class="rounded-full bg-green-5 px-5 text-sm font-medium text-white-1 Montserrat-Semibold py-0.5 transition hover:bg-green-5/75"
                         href="#">
                         Apply
                     </a>
@@ -35,7 +35,7 @@
                     </svg>
                 </button>
                 <nav aria-label="Global" class="">
-                    <ul class="flex flex-col mt-4 pt-4 md:pt-0 md:mt-0 md:flex-row md:items-center gap-6 text-sm">
+                    <ul class="flex flex-wrap flex-col mt-4 pt-4 md:pt-0 md:mt-0 md:flex-row md:items-center gap-4 text-sm">
                         <li>
                             <a class="text-white-1/75 transition hover:text-white-1 Montserrat-Semibold" href="#"> Home
                             </a>
@@ -73,7 +73,7 @@
                 </nav>
 
                 <div class="flex mt-4 pt-4 md:pt-0 md:mt-0">
-                    <a class="w-1/4 md:w-auto text-center rounded-full bg-green-5 px-5 py-0.5 text-sm text-white-1 Montserrat-Semibold hover:bg-green-5/75"
+                    <a class="transition w-1/4 md:w-auto text-center rounded-full bg-green-5 px-5 py-0.5 text-sm text-white-1 Montserrat-Semibold hover:bg-green-5/75"
                         href="#">
                         Apply
                     </a>

@@ -1,7 +1,25 @@
 <app-navbar></app-navbar>
 
 <main class="container mx-auto py-12">
-    <section class="flex flex-wrap">
+    <section class="flex flex-col">
+        <div>
+            <picture class="inline-block logo-navbar">
+                <source media="(max-width: 1023px)"
+                    srcset='../assets/images/home/logo-MUN-mob-Newton-College.png 1x, ../assets/images/home/logo-MUN-mob-Newton-College@2x.png 2x'>
+                <source media="(min-width: 768px)"
+                    srcset='../assets/images/home/logo-MUN-desk-Newton-College.png 1x, ../assets/images/home/logo-MUN-desk-Newton-College@2x.png 2x'>
+                <img src="../assets/images/home/logo-MUN-mob-Newton-College.png" alt="Logo de Newton" class="w-full">
+            </picture>
+        </div>
+
+        <div>
+            <p>Join us on april 20th & 21st!</p>
+            <a class="rounded-full bg-green-5 px-5 text-sm font-medium text-white-1 Montserrat-Semibold py-0.5"
+                href="#">
+                Apply
+            </a>
+        </div>
+
         <div class="w-full md:w-1/2 p-4">
             <h2 class="text-xl font-bold mb-4">Título 1</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Cras ullamcorper massa
