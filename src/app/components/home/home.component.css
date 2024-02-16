@@ -44,3 +44,7 @@ only screen and (min-resolution: 2dppx) {
 .home-statist-char .image img{
 
 }
+.home-video-yt iframe{
+    /* min-width: 332px; */
+    /* height: 177px; */
+}
