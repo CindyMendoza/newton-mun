@@ -12,7 +12,9 @@
         background-position: left;
         @include background-retina('/assets/images/home/header-bg-home-newton-mun-mob@2x.jpg');
     }
-
+    .home-statist-char .image img{
+        width: 40px;
+    }
 
 }
 
@@ -36,4 +38,9 @@ only screen and (min-resolution: 2dppx) {
     .bg-home {
         background-image: url('/assets/images/home/header-bg-home-newton-mun-desk@2x.jpg');
     }
+}
+
+
+.home-statist-char .image img{
+
 }
