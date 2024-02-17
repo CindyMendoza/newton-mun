@@ -1,44 +1,166 @@
 <main class="">
-    <div class="bg-schedule bg-header">
+    <div class="bg-header bg-schedule">
         <app-navbar></app-navbar>
-        <section class="flex flex-col container mx-auto home-logo-mun pt-28 md:pt-48 pb-56 md:pb-36">
-            <div class="mx-auto md:ml-0">
-                <picture class="inline-block">
-                    <source media="(max-width: 767px)"
-                        srcset='../assets/images/home/logo-MUN-mob-Newton-College.png 1x, ../assets/images/home/logo-MUN-mob-Newton-College@2x.png 2x'>
-                    <source media="(min-width: 768px)"
-                        srcset='../assets/images/home/logo-MUN-desk-Newton-College.png 1x, ../assets/images/home/logo-MUN-desk-Newton-College@2x.png 2x'>
-                    <img src="../assets/images/home/logo-MUN-mob-Newton-College.png" alt="Logo de Newton MUN"
-                        class="w-full">
-                </picture>
-            </div>
+        <section class="container mx-auto grid justify-items-center items-center">
+            <div class="flex flex-col md:flex-row justify-center md:gap-20">
+                <div>
+                    <h1 class="text-white-1 Montserrat-Semibold text-2xl md:text-[28px]">First Day</h1>
+                    <span
+                        class="text-white-1 Montserrat-Semibold text-lg md:text-xl bg-green-6 py-1 px-2">Saturday</span>
 
-            <div class="text-center md:text-left">
-                <p class="Montserrat-Medium text-white-1 text-sm md:text-3xl mt-3 md:mt-4 md:mb-6 md:pb-2">Join us on
-                    April 20th
-                    & 21st!</p>
-                <a class="rounded-full bg-green-5 px-8 md:px-12  text-white-1 Montserrat-Bold py-1 md:py-2 transition-all hover:bg-green-1 text-sm md:text-xl"
-                    href="#">
-                    Apply
-                </a>
+                    <table class="table-auto w-full mt-4 mb-10">
+                        <tbody>
+                            <tr>
+                                <td
+                                    class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-3/5 after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">
+                                    7:45 - 8:15
+                                </td>
+
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">
+                                    Registration
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td
+                                    class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">
+                                    8:15- 8:50
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">
+                                    Opening Ceremony
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">8:50 - 9:10
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">Transition to
+                                    committees</td>
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">9:10 - 11:30
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">Session I</td>
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">11:30 - 11:55
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">Break</td>
+
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">11:55 - 14:00
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">Session II
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">14:00 - 15:30
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">Lunch</td>
+
+
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">15:30 - 17:00
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm"> Session III
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">17:00 - 17:15
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">Break</td>
+
+
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">17:15 - 18:25
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">Session IV
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">18:25- 18:40
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">Break</td>
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:top-0 after:right-0 after:w-[2px] after:h-3/5 after:bg-green-6 before:content-[''] before:absolute before:bottom-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">18:40 - 19:45
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">Session V +
+                                    feedback</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h1 class="text-white-1 Montserrat-Semibold text-2xl md:text-[28px]">Second Day</h1>
+                    <span class="text-white-1 Montserrat-Semibold text-lg md:text-xl bg-green-6 py-1 px-2">Sunday</span>
+                    <table class="table-auto w-full mt-4 mb-10">
+                        <tbody>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-3/5 after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">
+                                    8:00 - 8:30
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">
+                                    Doors Open
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">
+                                    8:30 - 10:45
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">
+                                    Session VI
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">
+                                    10:45 - 11:00
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">
+                                    Break
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">
+                                    11:00 - 12:00
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">
+                                    Session VII
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:top-0 after:right-0 after:w-[2px] after:h-full after:bg-green-6 before:content-[''] before:absolute before:top-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">
+                                    12:00 - 12:45
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">
+                                    Break
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="relative px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm after:content-[''] after:absolute after:top-0 after:right-0 after:w-[2px] after:h-3/5 after:bg-green-6 before:content-[''] before:absolute before:bottom-[8px] before:right-[-2px] before:w-[7px] before:h-[7px] before:bg-green-6 before:rounded-full">
+                                    12:45 - 14:00
+                                </td>
+                                <td class="px-4 py-2 text-white-1 Montserrat-Semibold text-xs md:text-sm">
+                                    Closing Ceremony
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
             </div>
 
 
         </section>
+
     </div>
-
-
-    <section class="home-statist-char">
-
-        
-
-    </section>
-    <section class="flex flex-col container mx-auto home-letter-from-newton md:py-20">
-        
-    </section>
-    <section class="home-video-yt container mx-auto grid justify-items-center items-center">
-
-        
-    </section>
     <app-footer></app-footer>
 </main>
