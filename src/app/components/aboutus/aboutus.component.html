@@ -1,6 +1,82 @@
-<div class="bg-aboutus bg-header">
-    <app-navbar></app-navbar>
-    <p>aboutus works!</p>
-</div>
+<main class="">
+    <div class="bg-aboutus bg-header">
+        <app-navbar></app-navbar>
+        <section class="flex flex-col container mx-auto home-logo-mun pt-28 md:pt-48 pb-56 md:pb-36">
+            <div class="mx-auto md:ml-0">
+                <picture class="inline-block">
+                    <source media="(max-width: 767px)"
+                        srcset='../assets/images/home/logo-MUN-mob-Newton-College.png 1x, ../assets/images/home/logo-MUN-mob-Newton-College@2x.png 2x'>
+                    <source media="(min-width: 768px)"
+                        srcset='../assets/images/home/logo-MUN-desk-Newton-College.png 1x, ../assets/images/home/logo-MUN-desk-Newton-College@2x.png 2x'>
+                    <img src="../assets/images/home/logo-MUN-mob-Newton-College.png" alt="Logo de Newton MUN"
+                        class="w-full">
+                </picture>
+            </div>
 
-<app-footer></app-footer>
+            <div class="text-center md:text-left">
+                <p class="Montserrat-Medium text-white-1 text-sm md:text-3xl mt-3 md:mt-4 md:mb-6 md:pb-2">Join us on
+                    April 20th
+                    & 21st!</p>
+                <a class="rounded-full bg-green-5 px-8 md:px-12  text-white-1 Montserrat-Bold py-1 md:py-2 transition-all hover:bg-green-1 text-sm md:text-xl"
+                    href="#">
+                    Apply
+                </a>
+            </div>
+
+
+        </section>
+    </div>
+
+
+    <section class="aboutus-statist-char">
+
+
+
+    </section>
+    <section class="flex flex-col container mx-auto aboutus-letter-from-newton md:py-20">
+
+    </section>
+    <section class="aboutus-faculty-advisors container mx-auto grid justify-items-center items-center my-10">
+        <div>
+            <h2 class="Montserrat-Bold text-2xl md:text-3xl text-center my-8">
+                Faculty Advisors
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4">
+                <div class="md:flex md:flex-col-reverse">
+                    <div>
+                        <picture class="inline-block">
+                            <source media="(max-width: 767px)"
+                                srcset='../assets/images/aboutus/newton-mun-aboutus-faculty-advisors-melissa-castillo-mob.jpg 1x, ../assets/images/aboutus/newton-mun-aboutus-faculty-advisors-melissa-castillo-mob@2x.jpg 2x'>
+                            <source media="(min-width: 768px)"
+                                srcset='../assets/images/aboutus/newton-mun-aboutus-faculty-advisors-melissa-castillo-desk.jpg 1x, ../assets/images/aboutus/newton-mun-aboutus-faculty-advisors-melissa-castillo-desk@2x.jpg 2x'>
+                            <img src="../assets/images/aboutus/newton-mun-aboutus-faculty-advisors-melissa-castillo-mob.jpg"
+                                alt="Imagen de Melissa Castillo" class="w-full">
+                        </picture>
+                    </div>
+                    <div>
+                        <span class="Montserrat-Regular text-sm	md:text-lg block mt-2">Senior Coordinator</span>
+                        <strong class="Montserrat-Bold text-base md:text-xl block mb-8">Melissa Castillo</strong>
+                    </div>
+                </div>
+                <div class="md:ml-10 md:flex md:flex-col-reverse">
+                    <div>
+                        <picture class="inline-block">
+                            <source media="(max-width: 767px)"
+                                srcset='../assets/images/aboutus/newton-mun-aboutus-faculty-advisors-merrill-grant-mob.jpg 1x, ../assets/images/aboutus/newton-mun-aboutus-faculty-advisors-merrill-grant-mob@2x.jpg 2x'>
+                            <source media="(min-width: 768px)"
+                                srcset='../assets/images/aboutus/newton-mun-aboutus-faculty-advisors-merrill-grant-desk.jpg 1x, ../assets/images/aboutus/newton-mun-aboutus-faculty-advisors-merrill-grant-desk@2x.jpg 2x'>
+                            <img src="../assets/images/aboutus/newton-mun-aboutus-faculty-advisors-merrill-grant-mob.jpg"
+                                alt="Imagen de Merrill Grant" class="w-full">
+                        </picture>
+                    </div>
+                    <div>
+                        <span class="Montserrat-Regular text-sm	md:text-lg block mt-2">Junior Coordinator</span>
+                        <strong class="Montserrat-Bold text-base md:text-xl block mb-8">Merrill Grant</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <app-footer></app-footer>
+</main>

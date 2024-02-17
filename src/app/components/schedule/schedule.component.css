@@ -1,0 +1,59 @@
+@media screen and (min-width: 768px) {
+    .bg-schedule {
+        background-image: url('/assets/images/schedule/header-bg-schedule-newton-mun-desk.jpg');
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bg-schedule {
+        background-image: url('/assets/images/schedule/header-bg-schedule-newton-mun-mob.jpg');
+        background-position: left;
+    }
+    .schedule-statist-char .image img {
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .bg-schedule {
+        background-image: url('/assets/images/schedule/header-bg-schedule-newton-mun-mob@2x.jpg');
+    }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .bg-schedule {
+        background-image: url('/assets/images/schedule/header-bg-schedule-newton-mun-desk@2x.jpg');
+    }
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.schedule-letter-from-newton button {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
