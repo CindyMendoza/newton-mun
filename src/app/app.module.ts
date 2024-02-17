@@ -16,6 +16,7 @@ import { CommitteesComponent } from './components/committees/committees.componen
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { FacilitiesComponent } from './components/facilities/facilities.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ContadorDirective } from './directives/contador.directive';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { ContactComponent } from './components/contact/contact.component';
     GalleryComponent,
     FacilitiesComponent,
     ContactComponent,
+    ContadorDirective,
     
   ],
   imports: [
