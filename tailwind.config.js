@@ -11,6 +11,7 @@ module.exports = {
           4: "#008540",
           5: "#008D3D",
           5: "#008B46",
+          6: "#00B346",
         },
         teal: {
           1: "#65b7b1",
@@ -27,6 +28,9 @@ module.exports = {
         white: {
           1: "#ffffff",
         },
+        gray:{
+          1:"#D4D6DA"
+        }
       },
     },
   },

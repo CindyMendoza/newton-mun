@@ -12,7 +12,8 @@
         background-position: left;
         @include background-retina('/assets/images/home/header-bg-home-newton-mun-mob@2x.jpg');
     }
-    .home-statist-char .image img{
+
+    .home-statist-char .image img {
         width: 40px;
     }
 
@@ -40,11 +41,22 @@ only screen and (min-resolution: 2dppx) {
     }
 }
 
-
-.home-statist-char .image img{
-
+.arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
 }
-.home-video-yt iframe{
-    /* min-width: 332px; */
-    /* height: 177px; */
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.home-letter-from-newton button{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

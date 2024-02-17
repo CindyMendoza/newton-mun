@@ -40,7 +40,8 @@
                         class="">
                 </div>
                 <div class="char flex flex-col items-start justify-center counters">
-                    <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all" appContador [countTo]='400' [duration]="500" easing="ease-in-out" [countInit]="50">50</span>
+                    <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all"
+                        appContador [countTo]='400' [duration]="500" easing="ease-in-out" [countInit]="50">50</span>
                     <span class="description text-white-1 text-sm md:text-xl Montserrat-Semibold">Delegates</span>
                 </div>
             </div>
@@ -52,7 +53,8 @@
                         class="">
                 </div>
                 <div class="char flex flex-col items-start justify-center counters">
-                    <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all" appContador [countTo]='10' [duration]="500" easing="ease-in-out" [countInit]="1">1</span>
+                    <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all"
+                        appContador [countTo]='10' [duration]="500" easing="ease-in-out" [countInit]="1">1</span>
                     <span class="description text-white-1 text-sm md:text-xl Montserrat-Semibold">Committees</span>
                 </div>
             </div>
@@ -64,7 +66,8 @@
                         class="">
                 </div>
                 <div class="char flex flex-col items-start justify-center counters">
-                    <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all" appContador [countTo]='50' [duration]="500" easing="ease-in-out" [countInit]="5">5</span>
+                    <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all"
+                        appContador [countTo]='50' [duration]="500" easing="ease-in-out" [countInit]="5">5</span>
                     <span class="description text-white-1 text-sm md:text-xl Montserrat-Semibold">Guest teachers</span>
                 </div>
             </div>
@@ -76,14 +79,15 @@
                         class="">
                 </div>
                 <div class="char flex flex-col items-start justify-center counters">
-                    <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all" appContador [countTo]='3' [duration]="500" easing="ease-in-out" [countInit]="1">1</span>
+                    <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all"
+                        appContador [countTo]='3' [duration]="500" easing="ease-in-out" [countInit]="1">1</span>
                     <span class="description text-white-1 text-sm md:text-xl Montserrat-Semibold">Universities</span>
                 </div>
             </div>
         </div>
 
     </section>
-    <section class="flex flex-col container mx-auto home-letter-from-newton">
+    <section class="flex flex-col container mx-auto home-letter-from-newton md:py-20">
         <div class="grid md:grid-cols-2 gap-4 justify-items-center items-center">
             <div class="md:col-span-1 text-center">
 
@@ -97,17 +101,19 @@
                 </picture>
             </div>
             <div class="md:col-span-1">
-                <div>
-                    <p class="Montserrat-Regular text-xs md:text-sm">Letter from Newton</p>
-                    <h2 class="Montserrat-Bold text-2xl	md:text-3xl">MUN's Secretary-General</h2>
-                    <p class="Montserrat-Regular text-xs md:text-sm">Dear Delegates and Faculty Advisors,
+                <p class="Montserrat-Regular text-lg md:text-xl mb-2">Letter from Newton</p>
+                <h2 class="Montserrat-Bold text-2xl	md:text-3xl mb-4">MUN's Secretary-General</h2>
+
+                <div id="textBlock1" [class.hidden]="activeBlock !== 'textBlock1'">
+                    <p class="Montserrat-Regular text-xs md:text-sm mb-4">Dear Delegates and Faculty Advisors,
                     </p>
-                    <p class="Montserrat-Regular text-xs md:text-sm">Welcome to NewtonMUN 2024! It fills me with joy to
+                    <p class="Montserrat-Regular text-xs md:text-sm mb-4">Welcome to NewtonMUN 2024! It fills me with
+                        joy to
                         open the national conference circuit this
                         year,
                         marking our recovery from the pandemic's effects, both in our activity and in our national
                         socioeconomic context.</p>
-                    <p class="Montserrat-Regular text-xs md:text-sm"> I moved to Peru in 2018 and joined the Newton
+                    <p class="Montserrat-Regular text-xs md:text-sm mb-4"> I moved to Peru in 2018 and joined the Newton
                         Model United Nations club a few months after
                         joining
                         the school. What that means is that I joined the club completely fluent in Spanish but with very
@@ -122,7 +128,8 @@
                         speech, I still feel my stomach go cold, my neck gets tense, and I feel that mix of adrenaline
                         and
                         nervousness.</p>
-                    <p class="Montserrat-Regular text-xs md:text-sm">So what is the difference? How have these six years
+                    <p class="Montserrat-Regular text-xs md:text-sm mb-4">So what is the difference? How have these six
+                        years
                         in MUN helped me grow as a person? The
                         difference is that this feeling doesn’t stop me anymore. I know many of you will have this same
                         feeling throughout the conference and in many more in the future, in varying degrees of course.
@@ -139,8 +146,8 @@
                         fail when your plan is not the best, because quite honestly it never will be (another important
                         lesson from MUN). You fail only if you let temporary losses prevent you from long-term wins.</p>
                 </div>
-                <div>
-                    <p class="Montserrat-Regular text-xs md:text-sm">
+                <div id="textBlock2" [class.hidden]="activeBlock !== 'textBlock2'">
+                    <p class="Montserrat-Regular text-xs md:text-sm mb-4">
                         Now, I would like to address all of the faculty advisors. We know many of you have children and
                         partners at home, which you left behind to be at the conference for those two days. And even if
                         you don’t, I am sure all of you can come up with a list of more relaxing activities than
@@ -151,7 +158,7 @@
                         impact on their lives. Know that every speech they give and every personal challenge they
                         overcome, has been enabled because of your commitment.
                     </p>
-                    <p class="Montserrat-Regular text-xs md:text-sm">
+                    <p class="Montserrat-Regular text-xs md:text-sm mb-4">
                         With all of this being said, we await to see all of you on April 20th and 21st. The topics, as
                         well as the overall design of the conference, have carefully been chosen to make sure you have
                         the best time possible throughout this weekend. I hope you learn a lot through your time in the
@@ -160,35 +167,58 @@
                         will grow, and the Newton team cannot wait to see it!
 
                     </p>
-                    <p class="Montserrat-Regular text-xs md:text-sm">
+                    <p class="Montserrat-Regular text-xs md:text-sm mb-4">
                         Thank you very much for your attention, and we look forward to seeing you at the conference!
 
                     </p>
-                    <p class="Montserrat-Regular text-xs md:text-sm">
+                    <p class="Montserrat-Regular text-xs md:text-sm mb-8">
                         Sincerely,
                     </p>
 
 
 
-                    <p>
-                        <strong class="Montserrat-Semibold text-lg md:text-xl">
+
+                    <div class="pl-4 relative mb-6">
+                        <div class="absolute inset-0 bg-green-6 w-1">
+
+                        </div>
+                        <strong class="Montserrat-Semibold text-lg md:text-xl block">
                             Enzo Porto
                         </strong>
-                        <span class="Montserrat-Regular text-xs md:text-sm">
+                        <span class="Montserrat-Regular text-xs md:text-sm block">
                             Newton Model United Nations Secretary-General.
                         </span>
-                    </p>
+                    </div>
 
 
                 </div>
+                <div class="flex items-center justify-center">
+                    <div class="w-full border-t-2 border-gray-1 my-8"></div>
+
+
+                    <button
+                        class="bg-white-1 ml-8 w-[40px] h-[40px]  py-2 px-4 
+                                   {{ activeButton === 'textBlock1' ? 'opacity-50 cursor-not-allowed bg-gray-1' : 'opacity-100' }} rounded-full "
+                        (click)="showTextBlock('textBlock1')" [disabled]="activeButton === 'textBlock1'">
+                        <i class="arrow left"></i>
+                    </button>
+                    <button
+                        class="ml-6 bg-white-1 w-[40px] h-[40px]  py-2 px-4 
+                                   {{ activeButton === 'textBlock2' ? 'opacity-50 cursor-not-allowed bg-gray-1' : 'opacity-100' }} rounded-full "
+                        (click)="showTextBlock('textBlock2')" [disabled]="activeButton === 'textBlock2'">
+                        <i class="arrow right"></i>
+                    </button>
+                </div>
             </div>
+
+
         </div>
     </section>
     <section class="home-video-yt container mx-auto grid justify-items-center items-center">
-        
-        <div class="w-full max-w-md mx-auto md:max-w-[1161px] py-8 px-4">
-            <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/q_vd2tSLIdI" title="Newton College Model UN - 2023 YouTube video"
-                allowfullscreen></iframe>
+
+        <div class="w-full max-w-md mx-auto md:max-w-[1161px] py-12 ">
+            <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/q_vd2tSLIdI"
+                title="Newton College Model UN - 2023 YouTube video" allowfullscreen></iframe>
         </div>
     </section>
     <app-footer></app-footer>
