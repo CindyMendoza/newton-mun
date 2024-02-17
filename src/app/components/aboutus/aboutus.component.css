@@ -12,7 +12,7 @@
     .bg-aboutus {
         background-image: url('/assets/images/aboutus/header-bg-aboutus-newton-mun-mob@2x.jpg');
         background-position: top;
-        background-size: 100% auto;
+        background-size: 100px auto;
         padding-bottom: 35vw;
     }
 
@@ -40,4 +40,65 @@ only screen and (min-resolution: 2dppx) {
     .bg-aboutus {
         background-image: url('/assets/images/aboutus/header-bg-aboutus-newton-mun-desk@2x.jpg');
     }
+}
+
+swiper-container {
+    width: 100px;
+    height: 100px;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+swiper-container {
+    width: 100px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper {
+    height: 80%;
+    width: 100px;
+}
+
+.mySwiper2 {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper2 swiper-slide {
+    width: 25%;
+    height: 100px;
+    opacity: 0.4;
+}
+
+.mySwiper2 .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }

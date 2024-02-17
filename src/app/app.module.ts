@@ -18,7 +18,10 @@ import { FacilitiesComponent } from './components/facilities/facilities.componen
 import { ContactComponent } from './components/contact/contact.component';
 import { ContadorDirective } from './directives/contador.directive';
 
-
+// import function to register Swiper custom elements
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+register();
 @NgModule({
   declarations: [
     AppComponent,
