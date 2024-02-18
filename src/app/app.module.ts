@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA , NO_ERRORS_SCHEMA} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { FormsModule } from '@angular/forms';
@@ -47,6 +47,6 @@ register();
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas:[CUSTOM_ELEMENTS_SCHEMA],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA,NO_ERRORS_SCHEMA],
 })
 export class AppModule {}
