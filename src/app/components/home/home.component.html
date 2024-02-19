@@ -1,7 +1,7 @@
 <main class="">
     <div class="bg-home bg-header">
         <app-navbar></app-navbar>
-        <section class="flex flex-col container mx-auto home-logo-mun pt-28 md:pt-48 pb-56 md:pb-36">
+        <section class="flex px-6 flex-col container mx-auto home-logo-mun pt-28 md:pt-48 pb-56 md:pb-36">
             <div class="mx-auto md:ml-0">
                 <picture class="inline-block">
                     <source media="(max-width: 767px)"
@@ -9,7 +9,7 @@
                     <source media="(min-width: 768px)"
                         srcset='../assets/images/home/logo-MUN-desk-Newton-College.png 1x, ../assets/images/home/logo-MUN-desk-Newton-College@2x.png 2x'>
                     <img src="../assets/images/home/logo-MUN-mob-Newton-College.png" alt="Logo de Newton MUN"
-                        class="w-full">
+                        class="w-auto">
                 </picture>
             </div>
 
@@ -37,7 +37,7 @@
 
                     <img src="../assets/images/home/home-statist-char-delegates-desk.png" alt="Icono de Delegates"
                         srcset='../assets/images/home/home-statist-char-delegates-desk.png 1x, ../assets/images/home/home-statist-char-delegates-desk@2x.png 2x'
-                        class="">
+                        class="w-auto">
                 </div>
                 <div class="char flex flex-col items-start justify-center counters">
                     <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all"
@@ -50,7 +50,7 @@
                 <div class="image mr-4 md:mr-8">
                     <img src="../assets/images/home/home-statist-char-committeess-desk.png" alt="Icono de Committees"
                         srcset='../assets/images/home/home-statist-char-committeess-desk.png 1x, ../assets/images/home/home-statist-char-committeess-desk@2x.png 2x'
-                        class="">
+                        class="w-auto">
                 </div>
                 <div class="char flex flex-col items-start justify-center counters">
                     <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all"
@@ -63,7 +63,7 @@
                 <div class="image mr-4 md:mr-8">
                     <img src="../assets/images/home/home-statist-char-guest-teachers-desk.png" alt="Icono de teachers"
                         srcset='../assets/images/home/home-statist-char-guest-teachers-desk.png 1x, ../assets/images/home/home-statist-char-guest-teachers-desk@2x.png 2x'
-                        class="">
+                        class="w-auto">
                 </div>
                 <div class="char flex flex-col items-start justify-center counters">
                     <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all"
@@ -76,7 +76,7 @@
                 <div class="image mr-4 md:mr-8">
                     <img src="../assets/images/home/home-statist-char-universities-desk.png" alt="Icono de Universities"
                         srcset='../assets/images/home/home-statist-char-universities-desk.png 1x, ../assets/images/home/home-statist-char-universities-desk@2x.png 2x'
-                        class="">
+                        class="w-auto">
                 </div>
                 <div class="char flex flex-col items-start justify-center counters">
                     <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all"
@@ -87,20 +87,22 @@
         </div>
 
     </section>
-    <section class="flex flex-col container mx-auto home-letter-from-newton md:py-20">
-        <div class="grid md:grid-cols-2 gap-4 justify-items-center items-center">
-            <div class="md:col-span-1 text-center">
+    <section class="px-6 flex flex-col container mx-auto home-letter-from-newton md:py-20">
+        <div class="grid xl:grid-cols-3 gap-6 justify-items-center items-start">
+            <div class="xl:col-span-1 text-center">
+                <div class="grid justify-center items-center">
+                    <picture class="inline-block">
+                        <source media="(max-width: 767px)"
+                            srcset='../assets/images/home/home-letter-from-newton-enzo-porto-mb.jpg 1x, ../assets/images/home/home-letter-from-newton-enzo-porto-mb@2x.jpg 2x'>
+                        <source media="(min-width: 768px)"
+                            srcset='../assets/images/home/home-letter-from-newton-enzo-porto-desk.jpg 1x, ../assets/images/home/home-letter-from-newton-enzo-porto-desk@2x.jpg 2x'>
+                        <img src="../assets/images/home/home-letter-from-newton-enzo-porto-mb.jpg"
+                            alt="Image of Enzo Porto" class="w-auto h-auto object-cover">
+                    </picture>
+                </div>
 
-                <picture class="inline-block">
-                    <source media="(max-width: 767px)"
-                        srcset='../assets/images/home/home-letter-from-newton-enzo-porto-mb.jpg 1x, ../assets/images/home/home-letter-from-newton-enzo-porto-mb@2x.jpg 2x'>
-                    <source media="(min-width: 768px)"
-                        srcset='../assets/images/home/home-letter-from-newton-enzo-porto-desk.jpg 1x, ../assets/images/home/home-letter-from-newton-enzo-porto-desk@2x.jpg 2x'>
-                    <img src="../assets/images/home/home-letter-from-newton-enzo-porto-mb.jpg"
-                        alt="Image of Enzo Porto" class="w-full h-auto object-cover">
-                </picture>
             </div>
-            <div class="md:col-span-1">
+            <div class="xl:col-span-2">
                 <p class="Montserrat-Regular text-lg md:text-xl mb-2">Letter from Newton</p>
                 <h2 class="Montserrat-Bold text-2xl	md:text-3xl mb-4">MUN's Secretary-General</h2>
 
@@ -214,9 +216,9 @@
 
         </div>
     </section>
-    <section class="home-video-yt container mx-auto grid justify-items-center items-center">
+    <section class="home-video-yt px-6 container mx-auto grid justify-items-center items-center">
 
-        <div class="w-full max-w-md mx-auto md:max-w-[1161px] py-12 ">
+        <div class="w-full max-w-md mx-auto md:max-w-[1536px] py-12 ">
             <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/q_vd2tSLIdI"
                 title="Newton College Model UN - 2023 YouTube video" allowfullscreen></iframe>
         </div>
