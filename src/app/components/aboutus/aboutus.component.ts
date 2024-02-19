@@ -24,6 +24,28 @@ export class AboutusComponent implements AfterViewInit, OnInit {
 
     // observer: true,
   };
+  SwiperOptionsWhatIs = {
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      // // Ajustar la configuración según el tamaño de la pantalla
+      // 768: {
+      //   slidesPerView: 1.5,
+      // },
+     
+    }
+    // navigation: {
+    //   nextEl: '.button-next',
+    //   prevEl: '.button-prev',
+    //   // clickable: true,
+    // },
+    // autoHeight: true,
+    // calculateHeight:true,
+
+    // observer: true,
+  };
   // private swiper = new Swiper('.mySwiper');
   // private swiper: Swiper;
 

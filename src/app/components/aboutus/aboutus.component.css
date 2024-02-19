@@ -13,7 +13,7 @@
         background-image: url('/assets/images/aboutus/header-bg-aboutus-newton-mun-mob@2x.jpg');
         background-position: top;
         background-size: 100% auto;
-        padding-bottom: 35vw;
+        padding-bottom: 55vw;
     }
 
 
@@ -102,8 +102,10 @@ swiper-container.mySwiper {
 
 
 .mySwiper2 swiper-slide img {
-    display: block;
-    width: 100%;
+    /* display: block;
+    width: 100%; */
+    width: 115px;
+    height: 115px;
     /* margin: 10px; */
     /* object-fit: cover; */
 }
