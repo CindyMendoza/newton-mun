@@ -68,16 +68,16 @@ swiper-slide img {
 }
 
 swiper-container.mySwiper2 {
-    width: 100%;
-    max-width: 1074px;
+    width: auto;
+    /* max-width: 1074px; */
     height: 250px;
     margin-left: auto;
     margin-right: auto;
 }
 
 swiper-container.mySwiper {
-    width: 100%;
-    max-width: 1074px;
+    /* width: 100%; */
+    /* max-width: 1074px; */
     height: auto;
     margin-left: auto;
     margin-right: auto;
