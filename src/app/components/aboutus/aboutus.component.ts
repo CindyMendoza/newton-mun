@@ -1,6 +1,7 @@
 import { Component, AfterViewInit, OnInit } from '@angular/core';
+// import Swiper from 'swiper';
 import Swiper from 'swiper';
-
+import { Navigation, Pagination } from 'swiper/modules';
 @Component({
   selector: 'app-aboutus',
   templateUrl: './aboutus.component.html',
