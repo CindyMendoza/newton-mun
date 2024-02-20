@@ -16,6 +16,9 @@ MIT
 @angular/router
 MIT
 
+ngx-slick-carousel
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
@@ -222,11 +225,11 @@ Apache-2.0
  
 
 
-swiper
+slick-carousel
 MIT
 The MIT License (MIT)
 
-Copyright (c) 2019 Vladimir Kharlampidi
+Copyright (c) 2013-2016
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
