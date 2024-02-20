@@ -1,105 +1,99 @@
-import { Component, AfterViewInit, OnInit } from '@angular/core';
-// import Swiper from 'swiper';
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 @Component({
   selector: 'app-aboutus',
   templateUrl: './aboutus.component.html',
   styleUrls: ['./aboutus.component.css'],
 })
-export class AboutusComponent implements AfterViewInit, OnInit {
-  // swiper: Swiper;
+export class AboutusComponent {
+  slideConfig1 = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: false,
+    dots: true,
+    arrows: true,
 
-  SwiperOptionsOne = {
-    direction: 'horizontal',
-    loop: false,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    // navigation: {
-    //   nextEl: '.button-next',
-    //   prevEl: '.button-prev',
-    //   // clickable: true,
-    // },
-    // autoHeight: true,
-    // calculateHeight:true,
-
-    // observer: true,
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 1.3,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+        },
+      },
+    ],
   };
-  SwiperOptionsWhatIs = {
-    direction: 'horizontal',
-    loop: false,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    breakpoints: {
-      // // Ajustar la configuración según el tamaño de la pantalla
-      // 768: {
-      //   slidesPerView: 1.5,
-      // },
-     
-    }
-    // navigation: {
-    //   nextEl: '.button-next',
-    //   prevEl: '.button-prev',
-    //   // clickable: true,
-    // },
-    // autoHeight: true,
-    // calculateHeight:true,
+  slideConfig2 = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: false,
+    dots: false,
+    arrows: true,
 
-    // observer: true,
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 1.1,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+        },
+      },
+    ],
   };
-  // private swiper = new Swiper('.mySwiper');
-  // private swiper: Swiper;
-
-  
-  SwiperOptions = {
-    direction: 'horizontal',
-    loop: false,
-    slidesPerView: 8,
-    spaceBetween: 10,
+  slideConfig3 = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    arrows: false,
+    swipe:false,
+    asNavFor: '.the-secretariat-slide_for_ngx',
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+          swipe:true,
+        },
+      },
+    ],
+  };
+  slideConfig4 = {
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: true,
+    dots: false,
+    arrows: true,
+    asNavFor: '.the-secretariat-slide_ngx',
+    centerMode: false,
+    focusOnSelect: true,    
   };
 
-  constructor() {
-    // this.swiper = new Swiper('.mySwiper', {
-    //   // your Swiper options
-    // });
+  slickInit(e: any) {
+    console.log('slick initialized');
   }
-
-  ngOnInit() {
-    // this.swiper = new Swiper('.container-slide', {
-    //   navigation: {
-    //     nextEl: '.button-next',
-    //     prevEl: '.button-prev',
-    //   },
-    // });
+  breakpoint(e: any) {
+    console.log('breakpoint');
   }
-  // onSlideNext() {
-  //   if (this.swiper)  {
-  //     this.swiper.slideNext(); // Llama al método slideNext() al hacer clic en el botón
-  //   }
-  // }
-
-  // onSlidePrev() {
-  //   console.log("test slide");
-  //   if (this.swiper) {
-  //     this.swiper.slidePrev();
-  //   }
-  // }
-  ngAfterViewInit() {
-    const swiperContainer = document.querySelector(
-      'swiper-container.mySwiper2'
-    );
-    const swiperContainerOne = document.querySelector(
-      'swiper-container.mySwiper'
-    );
-    if (swiperContainer) {
-      Object.assign(swiperContainer, this.SwiperOptions);
-    }
-    if (swiperContainerOne) {
-      Object.assign(swiperContainerOne, this.SwiperOptionsOne);
-      // Object.assign(swiperContainer,this.SwiperOptions2)
-    }
-    // Elementos de navegación
-    // const nextButton = document.querySelector('.button-next');
-    // const prevButton = document.querySelector('.button-prev');
+  afterChange(e: any) {
+    console.log('afterChange');
   }
+  beforeChange(e: any) {
+    console.log('beforeChange');
+  }
+  constructor() {}
+  ngOnInit(): void {}
 }

@@ -2,7 +2,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA , NO_ERRORS_SCHEMA} from '@angular/cor
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { FormsModule } from '@angular/forms';
-import { NgOptimizedImage } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -18,10 +18,9 @@ import { FacilitiesComponent } from './components/facilities/facilities.componen
 import { ContactComponent } from './components/contact/contact.component';
 import { ContadorDirective } from './directives/contador.directive';
 
-// import function to register Swiper custom elements
-import { register } from 'swiper/element/bundle';
-// register Swiper custom elements
-register();
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,21 +28,23 @@ register();
     LoginComponent,
     NavbarComponent,
     FooterComponent,
-    AboutusComponent,
     ScheduleComponent,
     CommitteesComponent,
     GalleryComponent,
     FacilitiesComponent,
     ContactComponent,
     ContadorDirective,
-    
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    CommonModule,
+    SlickCarouselModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

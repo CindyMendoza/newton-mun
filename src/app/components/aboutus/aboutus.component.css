@@ -1,3 +1,10 @@
+.slider-name-hidden:hover .hidden {
+    @apply block;
+}
+.slider-name-hidden{
+    height: 200px;
+    padding-left: 5px;
+}
 @media screen and (min-width: 768px) {
     .bg-aboutus {
         background-image: url('/assets/images/aboutus/header-bg-aboutus-newton-mun-desk@2x.jpg');
@@ -40,96 +47,4 @@ only screen and (min-resolution: 2dppx) {
     .bg-aboutus {
         background-image: url('/assets/images/aboutus/header-bg-aboutus-newton-mun-desk@2x.jpg');
     }
-}
-
-/* swiper-container {
-    width: 100px;
-    height: 100px;
-} */
-
-/* swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-swiper-slide img {
-    display: block;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-} */
-.button-prev,
-.button-next {
-   background-color: red;
-}
-
-swiper-container.mySwiper2 {
-    width: auto;
-    /* max-width: 1074px; */
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-swiper-container.mySwiper {
-    /* width: 100%; */
-    /* max-width: 1074px; */
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* swiper-slide {
-    background-size: cover;
-    background-position: center;
-} */
-
-.mySwiper {
-    /* height: 80%; */
-    /* width: 100px; */
-}
-
-/* .mySwiper2 {
-    height: 20%;
-    box-sizing: border-box;
-    padding: 10px 0;
-}
-*/
-
-
-.mySwiper2 swiper-slide img {
-    /* display: block;
-    width: 100%; */
-    width: 115px;
-    height: 115px;
-    /* margin: 10px; */
-    /* object-fit: cover; */
-}
-
-/* .mySwiper2 swiper-slide img:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-} */
-/* .mySwiper2 swiper-container {
-    width: 100px;
-    /* max-width: 1124px; */
-/* height: 250px; */
-/* margin-left: auto; */
-/* margin-right: auto; */
-/* } */
-
-/* .mySwiper2 .swiper-slide-thumb-active {
-    opacity: 1;
-} */
-.slider-name-hidden:hover .hidden {
-    @apply block;
-}
-
-.slider-name-hidden {
-    /* margin-right: 10px; */
-    /* margin-left: 5px; */
 }

@@ -4,11 +4,127 @@
 
 @import 'assets/fonts/index.css';
 
-
-
 .bg-header {
     background-size: cover;
-    /* background-size: 100% auto;  */
-
     background-repeat: no-repeat;
+}
+
+.slick-dots {
+    bottom: -60px !important;
+}
+
+.slick-dots li button:before {
+    content: " " !important;
+    border-radius: 50%;
+    background-color: #313439;
+    width: 8px !important;
+    height: 8px !important;
+}
+
+.slick-arrow {
+    top: 120% !important;
+    width: 40px !important;
+    height: 40px !important;
+    @apply rounded-full bg-white-1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff !important;
+    z-index: 1 !important;
+}
+
+.slick-next {
+    right: 20px !important;
+}
+
+.slick-next:before {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.slick-prev {
+    left: 10px !important;
+}
+
+.slick-prev:before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.slick-arrow:before {
+    content: " " !important;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+}
+
+
+
+.facts-about-newton-slide_ngx .slick-arrow {
+    top: 50% !important;
+
+}
+
+.facts-about-newton-slide_ngx .slick-next {
+    right: -3px !important;
+
+}
+
+.facts-about-newton-slide_ngx .slick-prev {
+    left: -23px !important;
+
+}
+
+.the-secretariat-slide_for_ngx .slick-prev {
+    left: 30% !important;
+}
+
+.the-secretariat-slide_for_ngx .slick-next {
+    right: 60% !important;
+}
+
+@media screen and (max-width: 1023px) {
+    .facts-about-newton-slide .slide {
+        margin-right: 15px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .the-secretariat-slide_for_ngx .slick-arrow {
+        top: 97% !important;
+        transform: translate(0, -260px) !important;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .the-secretariat-slide_for_ngx .slick-arrow {
+        top: 90% !important;
+    }
+
+    .the-secretariat-slide_for_ngx .slick-next {
+        right: 62% !important;
+    }
+
+}
+
+@media screen and (min-width: 1536px) {
+    .slick-prev {
+        left: 10% !important;
+    }
+
+    .slick-next {
+        right: 10% !important;
+    }
+
+    .facts-about-newton-slide_ngx .slick-next {
+        right: -21px !important;
+
+    }
+    .the-secretariat-slide_for_ngx .slick-prev {
+        left: 25% !important;
+    }
+    .the-secretariat-slide_for_ngx .slick-next {
+        right: 68% !important;
+    }
 }
