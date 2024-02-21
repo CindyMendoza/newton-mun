@@ -1,0 +1,42 @@
+@media screen and (min-width: 768px) {
+    .bg-committees {
+        background-image: url('/assets/images/committees/newton-committess-download-bg-desk.jpg');
+        background-position: top;
+        background-size: cover;
+        /* padding-bottom: 30vw; */
+
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .bg-committees {
+        background-image: url('/assets/images/committees/newton-committess-download-bg-mob.jpg');
+        background-position: top;
+        /* background-size: 100% auto;
+        padding-bottom: 55vw; */
+    }
+}
+
+ 
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .bg-committees {
+        background-image: url('/assets/images/committees/newton-mun-committees-download-bg-mob@2x.jpg');
+    }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .bg-committees {
+        background-image: url('/assets/images/committees/newton-mun-committees-download-bg-desk@2x.jpg');
+    }
+} 
