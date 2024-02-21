@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-committees',
   templateUrl: './committees.component.html',
-  styleUrls: ['./committees.component.css']
+  styleUrls: ['./committees.component.css'],
 })
 export class CommitteesComponent {
   slideConfig1 = {
@@ -13,6 +13,8 @@ export class CommitteesComponent {
     infinite: true,
     dots: true,
     arrows: true,
-   
+    centerMode: true,
+    centerPadding: '0px',
+    
   };
 }

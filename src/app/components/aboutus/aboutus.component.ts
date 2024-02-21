@@ -56,6 +56,7 @@ export class AboutusComponent {
     dots: false,
     arrows: false,
     swipe:false,
+    fade: true,
     asNavFor: '.the-secretariat-slide_for_ngx',
     responsive: [
       {

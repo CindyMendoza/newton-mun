@@ -1,4 +1,45 @@
-<app-navbar></app-navbar>
+<main class="">
+    <div class="bg-header bg-contact">
+        <app-navbar></app-navbar>
 
-<p>contact works!</p>
-<app-footer></app-footer>
+
+
+    </div>
+
+
+
+
+
+    <section class="contact-datos  container mx-auto pt-14 pb-20 lg:py-60">
+        <div class="flex flex-col items-center justify-center md:flex-row">
+            <div>
+                <picture class="inline-block">
+                    <source media="(max-width: 767px)"
+                        srcset='../assets/images/contact/contact-newton-mun-mob.jpg 1x, ../assets/images/contact/contact-newton-mun-mob@2x.jpg 2x'>
+                    <source media="(min-width: 768px)"
+                        srcset='../assets/images/contact/contact-newton-mun-desk.jpg 1x, ../assets/images/contact/contact-newton-mun-desk@2x.jpg 2x'>
+                    <img  src="../assets/images/contact/contact-newton-mun-mob.jpg" alt="Image of Enzo Porto"
+                        class="w-auto">
+                </picture>
+            </div>
+            <div class="md:ml-16">
+                <div class="mt-4">
+                    <span class=" block Montserrat-Regular text-[14px] md:text-[18px]">Senior MUN Coordinator</span>
+                    <strong class="mb-2 block Montserrat-Bold text-[16px] md:text-[20px]">Melissa Castillo</strong>
+                    <strong class=" block Montserrat-Bold text-[14px] md:text-[18px]">melissa.castillo@newton.edu.pe</strong>
+                </div>
+
+                <div class="mt-4">
+                    <span class="block Montserrat-Regular text-[14px] md:text-[18px]">Junior MUN Coordinator</span>
+                    <strong class="mb-2 block Montserrat-Bold text-[16px] md:text-[20px]">Merrill Grant</strong>
+                    <strong class="block Montserrat-Bold text-[14px] md:text-[18px]">merrilll.grant@newton.edu.pe</strong>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <app-footer></app-footer>
+</main>
