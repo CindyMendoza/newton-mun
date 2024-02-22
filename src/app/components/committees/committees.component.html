@@ -1,7 +1,7 @@
 <main class="">
     <div class="bg-header bg-committees">
         <app-navbar></app-navbar>
-        
+
 
         <div class="text-center py-40">
             <p class="Montserrat-Bold text-white-1 text-[24px] mb-4 md:text-[30px]">
@@ -17,42 +17,224 @@
 
 
 
-    <section class="committees-slider px-6 container mx-auto py-12">
+    <section class="committees-slider px-6 container mx-auto py-44 ">
         <div class="flex flex-col items-center justify-items-center">
-           
-            <div class="w-full the-secretariat-slider relative">
-               <ngx-slick-carousel class="the-secretariat-slide_ngx" #slickModal="slick-carousel"
+
+            <div class="w-full committees-slider_box relative">
+                <ngx-slick-carousel class="committees-slider_ngx" #slickModal="slick-carousel"
                     [config]="slideConfig1">
-                    <div ngxSlickItem class="slide">
-                        <div class="flex flex-col lg:flex-row items-center justify-items-center ">
+                    <div ngxSlickItem class="slide hover:scale-105 cursor-pointer">
+                        <div class="flex flex-col lg:flex-row items-center justify-items-center justify-center">
                             <img src="../assets/images/committees/committees-disec.jpg"
-                            srcset='../assets/images/committees/committees-disec.jpg 1x, ../assets/images/committees/committees-disec@2x.jpg 2x'   alt="Image of" class="w-auto">
-                           
+                                srcset='../assets/images/committees/committees-disec.jpg 1x, ../assets/images/committees/committees-disec@2x.jpg 2x'
+                                alt="Image of" class="w-auto">
+
+                        </div>
+                        <div class="text-center mt-14 text-slider-hide h-[200px]">
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] ">General Assembly Committees
+                            </p>
+                            <strong class="Montserrat-Bold text-[14px] lg:text-[18px] h-[165px]">Disarmament and International
+                                Security (DISEC)
+                            </strong>
+                            <div class="w-[80%] border-t-2 border-gray-1 my-1 mx-auto"></div>
+
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] mb-2">Hybrid Warfare
+                                (50 countries - double)
+                            </p>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                                class="Montserrat-Semibold text-[14px] rounded-full bg-green-5 text-white-1 transition-all hover:bg-green-1 p-1 px-4">Download</a>
                         </div>
                     </div>
-                    <div ngxSlickItem class="slide">
-                        <div class="flex flex-col lg:flex-row items-center justify-items-center ">
+                    <div ngxSlickItem class="slide slide hover:scale-105 cursor-pointer">
+                        <div class="flex flex-col lg:flex-row items-center justify-items-center justify-center">
                             <img src="../assets/images/committees/committees-sochum.jpg"
-                            srcset='../assets/images/committees/committees-sochum.jpg 1x, ../assets/images/committees-sochum@2x.jpg 2x'   alt="Image of" class="w-auto">
-                           
+                                srcset='../assets/images/committees/committees-sochum.jpg 1x, ../assets/images/committees-sochum@2x.jpg 2x'
+                                alt="Image of" class="w-auto">
+
+                        </div>
+                        <div class="text-center mt-14 text-slider-hide h-[200px]">
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] ">General Assembly Committees
+                            </p>
+                            <strong class=" block Montserrat-Bold text-[14px] lg:text-[18px] h-[165px]">Social, Humanitarian, and
+                                Cultural Committee (SOCHUM)
+                                Addressing SDG 12: Responsible consumption and production
+                            </strong>
+                            <div class="w-[80%] border-t-2 border-gray-1 my-1 mx-auto"></div>
+
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] mb-2">(45 delegates)
+
+                            </p>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                                class="Montserrat-Semibold text-[14px] rounded-full bg-green-5 text-white-1 transition-all hover:bg-green-1 p-1 px-4">Download</a>
                         </div>
                     </div>
-                    <div ngxSlickItem class="slide">
-                        <div class="flex flex-col lg:flex-row items-center justify-items-center ">
+                    <div ngxSlickItem class="slide slide hover:scale-105 cursor-pointer">
+                        <div class="flex flex-col lg:flex-row items-center justify-items-center justify-center">
                             <img src="../assets/images/committees/committees-hunsc.jpg"
-                            srcset='../assets/images/committees/committees-hunsc.jpg 1x, ../assets/images/committees/committees-hunsc@2x.jpg 2x'   alt="Image of" class="w-auto">
-                           
+                                srcset='../assets/images/committees/committees-hunsc.jpg 1x, ../assets/images/committees/committees-hunsc@2x.jpg 2x'
+                                alt="Image of" class="w-auto">
+
+                        </div>
+                        <div class="text-center mt-14 text-slider-hide h-[200px]">
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] ">Futuristic United Nations Security
+                                Council (FUNSC)
+                            </p>
+                            <strong class="Montserrat-Bold text-[14px] lg:text-[18px] h-[180px]">World War III
+
+                            </strong>
+                            <div class="w-[80%] border-t-2 border-gray-1 my-1 mx-auto"></div>
+
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] mb-2">(30 countries)
+
+                            </p>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                                class="Montserrat-Semibold text-[14px] rounded-full bg-green-5 text-white-1 transition-all hover:bg-green-1 p-1 px-4">Download</a>
                         </div>
                     </div>
-                    <div ngxSlickItem class="slide">
-                        <div class="flex flex-col lg:flex-row items-center justify-items-center ">
+                    <div ngxSlickItem class="slide slide hover:scale-105 cursor-pointer">
+                        <div class="flex flex-col lg:flex-row items-center justify-items-center justify-center">
+                            <img src="../assets/images/committees/committees-unifec.jpg"
+                                srcset='../assets/images/committees/committees-unifec.jpg 1x, ../assets/images/committees/committees-unifec@2x.jpg 2x'
+                                alt="Image of" class="w-auto">
+
+                        </div>
+                        <div class="text-center mt-14 text-slider-hide h-[200px]">
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] ">The United Nations Children's Fund
+                                (UNICEF)
+
+                            </p>
+                            <strong class="Montserrat-Bold text-[14px] lg:text-[18px] h-[180px]">Responding to Child Trafficking
+                                in Conflict Zones
+                            </strong>
+                            <div class="w-[80%] border-t-2 border-gray-1 my-1 mx-auto"></div>
+
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] mb-2">(30 delegates - double)
+                            </p>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                                class="Montserrat-Semibold text-[14px] rounded-full bg-green-5 text-white-1 transition-all hover:bg-green-1 p-1 px-4">Download</a>
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide slide hover:scale-105 cursor-pointer">
+                        <div class="flex flex-col lg:flex-row items-center justify-items-center justify-center">
+                            <img src="../assets/images/committees/committees-hunsc.jpg"
+                                srcset='../assets/images/committees/committees-hunsc.jpg 1x, ../assets/images/committees/committees-hunsc@2x.jpg 2x'
+                                alt="Image of" class="w-auto">
+
+                        </div>
+                        <div class="text-center mt-14 text-slider-hide h-[200px]">
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] ">The Historical United Nations
+                                Security Council (UNESCO)
+                            </p>
+                            <strong class="Montserrat-Bold text-[14px] lg:text-[18px] h-[180px]">The treatment of journalists in
+                                conflict zones
+
+                            </strong>
+                            <div class="w-[80%] border-t-2 border-gray-1 my-1 mx-auto"></div>
+
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] mb-2">(35 countries)
+
+                            </p>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                                class="Montserrat-Semibold text-[14px] rounded-full bg-green-5 text-white-1 transition-all hover:bg-green-1 p-1 px-4">Download</a>
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide slide hover:scale-105 cursor-pointer">
+                        <div class="flex flex-col lg:flex-row items-center justify-items-center justify-center">
+                            <img src="../assets/images/committees/committees-jcc1.jpg"
+                                srcset='../assets/images/committees/committees-jcc1.jpg 1x, ../assets/images/committees/committees-jcc1@2x.jpg 2x'
+                                alt="Image of" class="w-auto">
+
+                        </div>
+                        <div class="text-center mt-14 text-slider-hide h-[200px]">
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] ">The Joint Crisis Committee (JCC)
+
+                            </p>
+                            <strong class="Montserrat-Bold text-[14px] lg:text-[18px] h-[180px]">Chavín de Huantar Military
+                                Operation: Takeover of Japanese Embassy
+
+                            </strong>
+                            <div class="w-[80%] border-t-2 border-gray-1 my-1 mx-auto"></div>
+
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] mb-2">(20 delegates)
+
+                            </p>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                                class="Montserrat-Semibold text-[14px] rounded-full bg-green-5 text-white-1 transition-all hover:bg-green-1 p-1 px-4">Download</a>
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide slide hover:scale-105 cursor-pointer">
+                        <div class="flex flex-col lg:flex-row items-center justify-items-center justify-center">
+                            <img src="../assets/images/committees/committees-jcc2.jpg"
+                                srcset='../assets/images/committees/committees-jcc2.jpg 1x, ../assets/images/committees/committees-jcc2@2x.jpg 2x'
+                                alt="Image of" class="w-auto">
+
+                        </div>
+                        <div class="text-center mt-14 text-slider-hide h-[200px]">
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] ">Organización de Estados Americanos
+                                (OEA)
+
+                            </p>
+                            <strong class="Montserrat-Bold text-[14px] lg:text-[18px] h-[180px]">Protección contra la Censura
+                                Artística
+                            </strong>
+                            <div class="w-[80%] border-t-2 border-gray-1 my-1 mx-auto"></div>
+
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] mb-2">(35 countries)
+
+                            </p>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                                class="Montserrat-Semibold text-[14px] rounded-full bg-green-5 text-white-1 transition-all hover:bg-green-1 p-1 px-4">Download</a>
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide slide hover:scale-105 cursor-pointer">
+                        <div class="flex flex-col lg:flex-row items-center justify-items-center justify-center">
+                            <img src="../assets/images/committees/committees-jcc2.jpg"
+                                srcset='../assets/images/committees/committees-jcc2.jpg 1x, ../assets/images/committees/committees-jcc2@2x.jpg 2x'
+                                alt="Image of" class="w-auto">
+
+                        </div>
+                        <div class="text-center mt-14 text-slider-hide h-[200px]">
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] ">United Nations - Women
+                                (UNWOMEN)
+                            </p>
+                            <strong class="Montserrat-Bold text-[14px] lg:text-[18px] h-[180px]">Addressing Disparities in Access
+                                to Assisted Reproductive Technologies
+
+                            </strong>
+                            <div class="w-[80%] border-t-2 border-gray-1 my-1 mx-auto"></div>
+
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] mb-2">(35 countries)
+
+
+                            </p>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                                class="Montserrat-Semibold text-[14px] rounded-full bg-green-5 text-white-1 transition-all hover:bg-green-1 p-1 px-4">Download</a>
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide slide hover:scale-105 cursor-pointer">
+                        <div class="flex flex-col lg:flex-row items-center justify-items-center justify-center">
                             <img src="../assets/images/committees/committees-presscorps.jpg"
-                            srcset='../assets/images/committees/committees-presscorps.jpg 1x, ../assets/images/committees/committees-presscorps@2x.jpg 2x'   alt="Image of" class="w-auto">
-                           
+                                srcset='../assets/images/committees/committees-presscorps.jpg 1x, ../assets/images/committees/committees-presscorps@2x.jpg 2x'
+                                alt="Image of" class="w-auto">
+
+                        </div>
+                        <div class="text-center mt-14 text-slider-hide h-[200px]">
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] ">
+                            </p>
+                            <strong class="Montserrat-Bold text-[14px] lg:text-[18px] h-[180px]">Press Corps
+
+                            </strong>
+                            <div class="w-[80%] border-t-2 border-gray-1 my-1 mx-auto"></div>
+
+                            <p class="Montserrat-Regular text-[12px] lg:text-[14px] mb-2">(15 delegates)
+
+                            </p>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                                class="Montserrat-Semibold text-[14px] rounded-full bg-green-5 text-white-1 transition-all hover:bg-green-1 p-1 px-4">Download</a>
                         </div>
                     </div>
-                   
-        
+
+
                 </ngx-slick-carousel>
 
             </div>

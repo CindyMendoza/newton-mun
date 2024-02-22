@@ -81,6 +81,17 @@
 .the-secretariat-slide_for_ngx .slick-next {
     right: 60% !important;
 }
+.committees-slider_ngx .slick-dots{
+    top: 56%;
+    bottom: auto !important;
+}
+.committees-slider_ngx .slick-track{
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.committees-slider_ngx .slick-track .slide:not(.slick-center) .text-slider-hide{
+    display: none;
+}
 
 @media screen and (max-width: 1023px) {
     .facts-about-newton-slide .slide {

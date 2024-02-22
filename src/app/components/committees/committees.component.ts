@@ -7,14 +7,22 @@ import { Component } from '@angular/core';
 })
 export class CommitteesComponent {
   slideConfig1 = {
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: false,
     infinite: true,
     dots: true,
     arrows: true,
     centerMode: true,
-    centerPadding: '0px',
+    centerPadding: '10px',
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
     
   };
 }
