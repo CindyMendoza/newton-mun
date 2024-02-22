@@ -24,6 +24,7 @@ export class ContadorDirective implements OnInit, OnDestroy {
   countInit!: number;
 
   private counterElement!: HTMLElement;
+  private hasAnimated = false;
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {}
 
@@ -40,8 +41,9 @@ export class ContadorDirective implements OnInit, OnDestroy {
 
   @HostListener('window:scroll', [])
   onScroll(): void {
-    if (this.isInViewport()) {
+    if (!this.hasAnimated && this.isInViewport()) {
       this.startCounterAnimation();
+      this.hasAnimated = true;
     }
   }
 
