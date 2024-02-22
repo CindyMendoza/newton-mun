@@ -11,8 +11,8 @@ export class AboutusComponent {
   slideConfig1 = {
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    infinite: false,
+    autoplay: true,
+    infinite: true,
     dots: true,
     arrows: true,
 
@@ -31,8 +31,8 @@ export class AboutusComponent {
   slideConfig2 = {
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    infinite: false,
+    autoplay: true,
+    infinite: true,
     dots: false,
     arrows: true,
 
@@ -76,11 +76,15 @@ export class AboutusComponent {
     slidesToScroll: 1,
     autoplay: false,
     infinite: true,
-    dots: false,
+    dots: true,
     arrows: true,
     asNavFor: '.the-secretariat-slide_ngx',
     centerMode: false,
-    focusOnSelect: true,    
+    focusOnSelect: true,
+    customPaging: function(slick: any,index: any) {
+      // return '<a>' + (index + 1) + '</a>';
+      // return  (index + 1) + '/' + slick.slideCount;
+  }  
   };
 
   slickInit(e: any) {

@@ -1,16 +1,19 @@
 .slider-name-hidden:hover .hidden {
     @apply block;
 }
-.slider-name-hidden{
+
+.slider-name-hidden {
     height: 220px;
     padding-left: 5px;
 }
+
 @media screen and (min-width: 768px) {
     .bg-aboutus {
         background-image: url('/assets/images/aboutus/header-bg-aboutus-newton-mun-desk@2x.jpg');
         background-position: top;
         background-size: cover;
         padding-bottom: 50vw;
+        height: 100vh;
 
     }
 }
@@ -21,6 +24,7 @@
         background-position: top;
         background-size: 100% auto;
         padding-bottom: 55vw;
+
     }
 
 
