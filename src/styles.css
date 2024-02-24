@@ -8,7 +8,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+/* .slick-slider .slick-track, .slick-slider .slick-list{
+    transform: translate3d(0, 0, 0) !important;
+} */
 .slick-dots {
     bottom: -60px !important;
 }
@@ -132,6 +134,9 @@
         margin-right: 10px;
     }
 
+    .the-secretariat-slide_ngx .slick-arrow {
+        top: 14% !important;
+    }
 
 }
 
@@ -160,10 +165,12 @@
         top: 55%;
         bottom: auto !important;
     }
+
     .committees-slider_ngx .slick-track .slide>div {
         height: 700px;
         padding-top: 0px;
     }
+
     .committees-slider_ngx .slick-list.draggable {
         height: 700px;
         padding-top: 0px;
@@ -175,7 +182,15 @@
         top: 97% !important;
         transform: translate(0, -260px) !important;
     }
-
+    .carousel-facts-about-newton-slider img{
+        width: 100% !important;
+     } 
+}
+@media screen and (min-width: 768px) {
+    .carousel-facts-about-newton-slider img{
+       margin-left: auto;
+       margin-right: auto;
+    } 
 }
 
 @media screen and (min-width: 1280px) {

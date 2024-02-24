@@ -60,3 +60,8 @@ only screen and (min-resolution: 2dppx) {
 .home-letter-from-newton button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+.btn-home-disabled {
+    box-shadow: none !important;
+    background-color: rgba(212, 214, 218, 1);
+}

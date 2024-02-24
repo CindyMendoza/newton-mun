@@ -11,21 +11,22 @@ export class AboutusComponent {
   slideConfig1 = {
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     infinite: true,
     dots: true,
     arrows: true,
-
+    // variableWidth:true,
     responsive: [
       {
         breakpoint: 1023,
         settings: {
-          slidesToShow: 1.3,
+          slidesToShow: 1.2,
           slidesToScroll: 1,
           dots: false,
           arrows: false,
         },
       },
+      
     ],
   };
   slideConfig2 = {
@@ -35,7 +36,7 @@ export class AboutusComponent {
     infinite: true,
     dots: false,
     arrows: true,
-
+    // variableWidth:true,
     responsive: [
       {
         breakpoint: 1023,
@@ -55,7 +56,7 @@ export class AboutusComponent {
     infinite: true,
     dots: false,
     arrows: false,
-    swipe:false,
+    swipe: false,
     fade: true,
     asNavFor: '.the-secretariat-slide_for_ngx',
     responsive: [
@@ -65,8 +66,8 @@ export class AboutusComponent {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: false,
-          arrows: false,
-          swipe:true,
+          arrows: true,
+          swipe: true,
         },
       },
     ],
@@ -81,10 +82,10 @@ export class AboutusComponent {
     asNavFor: '.the-secretariat-slide_ngx',
     centerMode: false,
     focusOnSelect: true,
-    customPaging: function(slick: any,index: any) {
+    customPaging: function (slick: any, index: any) {
       // return '<a>' + (index + 1) + '</a>';
       // return  (index + 1) + '/' + slick.slideCount;
-  }  
+    },
   };
 
   slickInit(e: any) {

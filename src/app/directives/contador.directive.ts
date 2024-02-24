@@ -30,8 +30,6 @@ export class ContadorDirective implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.counterElement = this.elementRef.nativeElement;
-
-    // this.initAnimation();
   }
 
   ngOnDestroy(): void {
