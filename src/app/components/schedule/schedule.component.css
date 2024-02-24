@@ -4,6 +4,9 @@
         background-position: left top;
         height: 100vh;
     }
+    .table_2 .before\:right-\[8px\]::before{
+        right: 0px !important;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -11,7 +14,10 @@
         background-image: url('/assets/images/schedule/header-bg-schedule-newton-mun-mob@2x.jpg');
         background-position: left top;
     }
-   
+    .schedule_table table {
+        max-width: 300px;
+    }
+
 }
 
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
@@ -35,6 +41,8 @@ only screen and (min-resolution: 2dppx) {
         background-image: url('/assets/images/schedule/header-bg-schedule-newton-mun-desk@2x.jpg');
     }
 }
-.bg-schedule{
+
+.bg-schedule {
     background-size: cover;
 }
+

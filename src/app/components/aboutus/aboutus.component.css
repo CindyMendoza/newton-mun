@@ -27,7 +27,11 @@
 
     }
 
-
+    .facts-about-newton-slide_ngx .slide > div {
+        /* height: 215px; */
+        height: 350px;
+        /* @apply object-cover; */
+    }
 
 }
 
@@ -52,11 +56,25 @@ only screen and (min-resolution: 2dppx) {
         background-image: url('/assets/images/aboutus/header-bg-aboutus-newton-mun-desk@2x.jpg');
     }
 }
-.carousel-facts-about-newton-slider .slide{
+
+.carousel-facts-about-newton-slider .slide {
     margin-right: 20px;
+    display: inline-block !important;
+    max-width: 100% !important;
 }
-.facts-about-newton-slide_ngx .slide > div{
-    height: 215px;
-    /* height: 350px; */
-    @apply  object-cover;
+
+.carousel-facts-about-newton-slider .slide img {
+    width: 100% !important;
 }
+
+.carousel-facts-about-newton-slider {
+    max-width: 100% !important;
+    width: 100% !important;
+    /* margin-left: auto !important; */
+    /* margin-right: auto !important; */
+}
+
+.facts-about-newton-slide_ngx .slide p {
+    line-height: normal !important;
+}
+

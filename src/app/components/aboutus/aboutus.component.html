@@ -56,13 +56,13 @@
                                 TRANSFORMING VISIONS INTO REALITY</strong> .</p>
                     </div>
                     <div class="what-is-newton-slider lg:pt-5">
-                        <ngx-slick-carousel class="carousel-facts-about-newton-slider" #slickModal="slick-carousel"
+                        <ngx-slick-carousel class="carousel-facts-about-newton-slider w-full" #slickModal="slick-carousel"
                             [config]="slideConfig1">
                             <div ngxSlickItem class="slide">
                                 <div>
                                     <img loading="lazy"
                                         src="../assets/images/aboutus/aboutus-what-is-newton-slide-1-v2.jpg"
-                                        alt="Image of What is Newton MUN?" class="w-auto"
+                                        alt="Image of What is Newton MUN?" class=""
                                         srcset='../assets/images/aboutus/aboutus-what-is-newton-slide-1-v2.jpg 1x, ../assets/images/aboutus/aboutus-what-is-newton-slide-1-v2@2x.jpg 2x'>
                                 </div>
                             </div>
@@ -70,7 +70,7 @@
                                 <div>
                                     <img loading="lazy"
                                         src="../assets/images/aboutus/aboutus-what-is-newton-slide-2.jpg"
-                                        alt="Image of What is Newton MUN?" class="w-auto"
+                                        alt="Image of What is Newton MUN?" class=""
                                         srcset='../assets/images/aboutus/aboutus-what-is-newton-slide-2.jpg 1x, ../assets/images/aboutus/aboutus-what-is-newton-slide-2@2x.jpg 2x'>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
                                 <div>
                                     <img loading="lazy"
                                         src="../assets/images/aboutus/aboutus-what-is-newton-slide-3.jpg"
-                                        alt="Image of What is Newton MUN?" class="w-auto"
+                                        alt="Image of What is Newton MUN?" class=""
                                         srcset='../assets/images/aboutus/aboutus-what-is-newton-slide-3.jpg 1x, ../assets/images/aboutus/aboutus-what-is-newton-slide-3@2x.jpg 2x'>
                                 </div>
                             </div>
@@ -147,8 +147,8 @@
         </div>
         <div class="container mx-auto px-8">
             <div class="flex flex-col lg:flex-row mt-6 lg:mt-auto">
-                <div class="w-full lg:w-[40%] flex justify-start items-center ml-6">
-                    <div class="bg-green-1 hidden lg:block">
+                <div class="w-full lg:w-[40%] justify-start items-center ml-6 hidden lg:flex">
+                    <div class="bg-green-1 ">
                         <h2 class="Montserrat-Bold text-white-1 text-[24px] md:text-[45px] text-center md:text-left leading-normal"
                             style="line-height: normal;">
                             Facts about <br>
@@ -163,12 +163,12 @@
                 <div class="w-full lg:w-[60%]">
                     <div class="flex flex-col items-center justify-items-center">
 
-                        <div class="facts-about-newton-slide w-full pl-8">
+                        <div class="facts-about-newton-slide w-full grow">
                             <ngx-slick-carousel class="facts-about-newton-slide_ngx" #slickModal="slick-carousel"
                                 [config]="slideConfig2">
                                 <div ngxSlickItem class="slide">
-                                    <div class="bg-lime-1 flex justify-between items-center">
-                                        <div class="flex justify-center items-center m-4 grow w-[60%]">
+                                    <div class="bg-lime-1 flex flex-col md:flex-row justify-end md:justify-between items-center">
+                                        <div class="flex justify-center items-center m-4 grow md:w-[60%]">
                                             <p class="Montserrat-Semibold text-[24px] md:text-[50px] text-white-1">
                                                 <span class="bg-green-2">2 Best</span><br>
                                                 Delegation
@@ -178,7 +178,7 @@
 
                                             <img loading="lazy"
                                                 src="../assets/images/aboutus/aboutus-2-best-delegation-slide-1.jpg"
-                                                alt="Image of 2 Best Delegation" class="w-auto float-right"
+                                                alt="Image of 2 Best Delegation" class=""
                                                 srcset='../assets/images/aboutus/aboutus-2-best-delegation-slide-1.jpg 1x, ../assets/images/aboutus/aboutus-2-best-delegation-slide-1@2x.jpg 2x'>
                                         </div>
 
@@ -186,16 +186,16 @@
                                     </div>
                                 </div>
                                 <div ngxSlickItem class="slide">
-                                    <div class="bg-lime-1 flex justify-between items-center">
+                                    <div class="bg-lime-1 flex flex-col md:flex-row justify-end md:justify-between items-center">
 
                                         <div>
 
                                             <img loading="lazy"
                                                 src="../assets/images/aboutus/aboutus-14-best-delegates-slide-2.jpg"
-                                                alt="Image of 14 Best Delegates" class="w-auto float-left"
+                                                alt="Image of 14 Best Delegates" class=""
                                                 srcset='../assets/images/aboutus/aboutus-14-best-delegates-slide-2.jpg 1x, ../assets/images/aboutus/aboutus-14-best-delegates-slide-2@2x.jpg 2x'>
                                         </div>
-                                        <div class="flex items-center justify-center m-4 grow w-[60%]">
+                                        <div class="flex justify-center items-center m-4 grow md:w-[60%]">
                                             <p class="Montserrat-Semibold text-[24px] md:text-[53px] text-white-1">
                                                 <span class="bg-green-2">14 Best</span><br>
                                                 Delegates
@@ -206,8 +206,8 @@
                                     </div>
                                 </div>
                                 <div ngxSlickItem class="slide">
-                                    <div class="bg-lime-1 flex justify-between items-center">
-                                        <div class="flex justify-center items-center m-4 grow w-[60%]">
+                                    <div class="bg-lime-1 flex flex-col md:flex-row justify-end md:justify-between items-center">
+                                        <div class="flex justify-center items-center m-4 grow md:w-[60%]">
                                             <p class="Montserrat-Semibold text-[19px] md:text-[42px] text-white-1">
                                                 <span class="bg-green-2">16 Outstanding</span> <br>Delegates
                                             </p>
@@ -216,7 +216,7 @@
 
                                             <img loading="lazy"
                                                 src="../assets/images/aboutus/aboutus-116-outstanding-delegates-slide-3.jpg"
-                                                alt="Image of 16 Outstanding Delegates" class="w-auto float-right"
+                                                alt="Image of 16 Outstanding Delegates" class=""
                                                 srcset='../assets/images/aboutus/aboutus-116-outstanding-delegates-slide-3.jpg 1x, ../assets/images/aboutus/aboutus-116-outstanding-delegates-slide-3@2x.jpg 2x'>
                                         </div>
 
@@ -224,16 +224,16 @@
                                     </div>
                                 </div>
                                 <div ngxSlickItem class="slide">
-                                    <div class="bg-lime-1 flex justify-between items-center">
+                                    <div class="bg-lime-1 flex flex-col md:flex-row justify-end md:justify-between items-center">
 
                                         <div>
 
                                             <img loading="lazy"
                                                 src="../assets/images/aboutus/aboutus-10-honourable-mention-slide-4.jpg"
-                                                alt="Image of 16 Outstanding Delegates" class="w-auto float-left"
+                                                alt="Image of 16 Outstanding Delegates" 
                                                 srcset='../assets/images/aboutus/aboutus-10-honourable-mention-slide-4.jpg 1x, ../assets/images/aboutus/aboutus-10-honourable-mention-slide-4@2x.jpg 2x'>
                                         </div>
-                                        <div class="flex justify-center items-center m-4 grow w-[60%]">
+                                        <div class="flex justify-center items-center m-4 grow md:w-[60%]">
                                             <p class="Montserrat-Semibold text-[19px] md:text-[42px] text-white-1">
                                                 <span class="bg-green-2">10 Honourable</span> <br>
                                                 mention
@@ -243,8 +243,8 @@
                                     </div>
                                 </div>
                                 <div ngxSlickItem class="slide">
-                                    <div class="bg-lime-1 flex justify-between items-center">
-                                        <div class="flex justify-center items-center m-4 grow w-[60%]">
+                                    <div class="bg-lime-1 flex flex-col md:flex-row justify-end md:justify-between items-center">
+                                        <div class="flex justify-center items-center m-4 grow md:w-[60%]">
                                             <p class="Montserrat-Semibold text-[24px] md:text-[53px] text-white-1">
                                                 <span class="bg-green-2">12 Verbal</span> <br>
                                                 mention
@@ -254,7 +254,7 @@
 
                                             <img loading="lazy"
                                                 src="../assets/images/aboutus/aboutus-12-verbal-mention-slide-5.jpg"
-                                                alt="Image of 12 Verbal mention" class="w-auto float-right"
+                                                alt="Image of 12 Verbal mention" class=""
                                                 srcset='../assets/images/aboutus/aboutus-12-verbal-mention-slide-5.jpg 1x, ../assets/images/aboutus/aboutus-12-verbal-mention-slide-5@2x.jpg 2x'>
                                         </div>
 
@@ -262,16 +262,16 @@
                                     </div>
                                 </div>
                                 <div ngxSlickItem class="slide">
-                                    <div class="bg-lime-1 flex justify-between items-center">
+                                    <div class="bg-lime-1 flex flex-col md:flex-row justify-end md:justify-between items-center">
 
                                         <div>
 
                                             <img loading="lazy"
                                                 src="../assets/images/aboutus/aboutus-3-best-position-papers-slide-6.jpg"
-                                                alt="Image of 3 Best position papers" class="w-auto float-left"
+                                                alt="Image of 3 Best position papers" 
                                                 srcset='../assets/images/aboutus/aboutus-3-best-position-papers-slide-6.jpg 1x, ../assets/images/aboutus/aboutus-3-best-position-papers-slide-6@2x.jpg 2x'>
                                         </div>
-                                        <div class="flex justify-center items-center m-4 grow w-[60%]">
+                                        <div class="flex justify-center items-center m-4 grow md:w-[60%]">
                                             <p class="Montserrat-Semibold text-[19px] md:text-[42px] text-white-1">
                                                 <span class="bg-green-2">3 Best</span><br>
                                                 position papers
@@ -281,8 +281,8 @@
                                     </div>
                                 </div>
                                 <div ngxSlickItem class="slide">
-                                    <div class="bg-lime-1 flex justify-between items-center">
-                                        <div class="flex justify-end items-center m-4 grow w-[60%]">
+                                    <div class="bg-lime-1 flex flex-col md:flex-row justify-end md:justify-between items-center">
+                                        <div class="flex justify-center items-center m-4 grow md:w-[60%]">
                                             <p class="Montserrat-Semibold text-[12px] md:text-[26px] text-white-1 ml-4">
                                                 In MUN Club participated <span class="bg-green-2">70 students</span>
                                                 from
@@ -294,7 +294,7 @@
                                             <img loading="lazy"
                                                 src="../assets/images/aboutus/aboutus-mun-club-participated-slide-7.jpg"
                                                 alt="Image of In MUN Club participated 70 students from 6th grade to FORM VI"
-                                                class="w-auto float-right"
+                                                class=""
                                                 srcset='../assets/images/aboutus/aboutus-mun-club-participated-slide-7.jpg 1x, ../assets/images/aboutus/aboutus-mun-club-participated-slide-7@2x.jpg 2x'>
                                         </div>
 
@@ -302,18 +302,18 @@
                                     </div>
                                 </div>
                                 <div ngxSlickItem class="slide">
-                                    <div class="bg-lime-1 flex justify-between items-center">
+                                    <div class="bg-lime-1 flex flex-col md:flex-row justify-end md:justify-between items-center">
 
                                         <div>
 
                                             <img loading="lazy"
                                                 src="../assets/images/aboutus/aboutus-10-national-and-1-international-conference-slide-8.jpg"
                                                 alt="Image of We participated in 10 national and 1 international conference"
-                                                class="w-auto float-left"
+                                                
                                                 srcset='../assets/images/aboutus/aboutus-10-national-and-1-international-conference-slide-8.jpg 1x, ../assets/images/aboutus/aboutus-10-national-and-1-international-conference-slide-8@2x.jpg 2x'>
                                         </div>
 
-                                        <div class="flex justify-center items-center m-4 grow w-[60%]">
+                                        <div class="flex justify-center items-center m-4 grow md:w-[60%]">
                                             <p class="Montserrat-Semibold text-[12px] md:text-[26px] text-white-1 mx-2">
                                                 We
                                                 participated in <span class="bg-green-2">10 national</span> and <span
@@ -322,8 +322,8 @@
                                     </div>
                                 </div>
                                 <div ngxSlickItem class="slide">
-                                    <div class="bg-lime-1 flex justify-between items-center">
-                                        <div class="flex justify-center items-center m-4 grow w-[60%]">
+                                    <div class="bg-lime-1 flex flex-col md:flex-row justify-end md:justify-between items-center">
+                                        <div class="flex justify-center items-center m-4 grow md:w-[60%]">
                                             <p class="Montserrat-Semibold text-[12px] md:text-[26px] text-white-1 pl-4">
                                                 <span class="bg-green-2">1 Outstanding</span> Delegate and <span
                                                     class="bg-green-2">1
@@ -335,7 +335,7 @@
                                             <img loading="lazy"
                                                 src="../assets/images/aboutus/aboutus-mention-at-harvard-slide-9.jpg"
                                                 alt="Image of 1 Outstanding Delegate and 1 Diplomatic Mention at Harvard MUN 2023"
-                                                class="w-auto float-right"
+                                                class=""
                                                 srcset='../assets/images/aboutus/aboutus-mention-at-harvard-slide-9.jpg 1x, ../assets/images/aboutus/aboutus-mention-at-harvard-slide-9@2x.jpg 2x'>
                                         </div>
 
@@ -360,8 +360,8 @@
         <div class="flex flex-col items-center justify-items-center">
             <h2 class="Montserrat-Bold text-2xl md:text-3xl text-center py-6 mb-4">The secretariat of Newton MUN 2024
             </h2>
-            <div class="w-full the-secretariat-slider relative">
-                <ngx-slick-carousel class="the-secretariat-slide_ngx" #slickModal="slick-carousel"
+            <div class="w-full the-secretariat-slider relative container mx-auto">
+                <ngx-slick-carousel class="w-full the-secretariat-slide_ngx lg:after:content-[''] lg:after:absolute lg:after:bottom-[15px] lg:after:right-[60px] lg:after:w-[60%] lg:after:h-[1px] lg:after:bg-gray-1" #slickModal="slick-carousel"
                     [config]="slideConfig3">
                     <div ngxSlickItem class="slide">
                         <div class="flex flex-col lg:flex-row items-center justify-items-center ">
@@ -374,7 +374,7 @@
                                         srcset='../assets/images/aboutus/newton-mun-aboutus-faculty-advisors-slider1-enzo-porto-desk.jpg 1x, ../assets/images/aboutus/newton-mun-aboutus-faculty-advisors-slider1-enzo-porto-desk@2x.jpg 2x'>
                                     <img loading="lazy"
                                         src="../assets/images/aboutus/newton-mun-aboutus-faculty-advisors-slider1-enzo-porto-mob.jpg"
-                                        alt="Image of Enzo Porto" class="w-auto">
+                                        alt="Image of Enzo Porto" class="">
                                 </picture>
                             </div>
                             <div

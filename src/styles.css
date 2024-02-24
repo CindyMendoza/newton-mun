@@ -8,6 +8,21 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* .slick-track {
+    width: 100% !important;
+} */
+
+.slick-initialized {
+    /* overflow: hidden; */
+}
+.slick-slider .slick-track, .slick-slider .slick-list {
+    /* transform: translate3d(0, 0, 0) !important; */
+    /* left: 50px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
 /* .slick-slider .slick-track, .slick-slider .slick-list{
     transform: translate3d(0, 0, 0) !important;
 } */
@@ -150,7 +165,7 @@
     }
 
     .committees-slider_ngx .slick-arrow {
-        top: 40% !important;
+        /* top: 40% !important; */
     }
 
     .committees-slider_ngx .slick-next {
@@ -182,15 +197,25 @@
         top: 97% !important;
         transform: translate(0, -260px) !important;
     }
-    .carousel-facts-about-newton-slider img{
-        width: 100% !important;
-     } 
+
+    .carousel-facts-about-newton-slider img {
+        /* width: 100% !important; */
+    }
 }
+
 @media screen and (min-width: 768px) {
-    .carousel-facts-about-newton-slider img{
-       margin-left: auto;
-       margin-right: auto;
-    } 
+    .carousel-facts-about-newton-slider img {
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    .schedule_table .table_2 .before\:right-\[8px\]::before {
+        right: -2px !important;
+    }
+
+    .schedule_table .table_2 .after\:right-\[10px\]::after {
+        right: 0px !important;
+    }
 }
 
 @media screen and (min-width: 1280px) {

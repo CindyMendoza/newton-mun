@@ -11,16 +11,17 @@ export class AboutusComponent {
   slideConfig1 = {
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     infinite: true,
     dots: true,
     arrows: true,
+    // transformEnabled: false,
     // variableWidth:true,
     responsive: [
       {
         breakpoint: 1023,
         settings: {
-          slidesToShow: 1.2,
+          slidesToShow: 1.1,
           slidesToScroll: 1,
           dots: false,
           arrows: false,
@@ -41,7 +42,7 @@ export class AboutusComponent {
       {
         breakpoint: 1023,
         settings: {
-          slidesToShow: 1.1,
+          slidesToShow: 1.05,
           slidesToScroll: 1,
           dots: false,
           arrows: false,
