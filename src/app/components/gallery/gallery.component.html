@@ -1,4 +1,99 @@
-<app-navbar></app-navbar>
+<main class="">
+    <div class="bg-header bg-gallery">
+        <app-navbar></app-navbar>
 
-<p>gallery works!</p>
-<app-footer></app-footer>
+
+
+    </div>
+    <section class="contact-datos  container mx-auto my-40">
+        <div class="tabs">
+            <div class="tab" (click)="selectTab('tab1')" [class.active]="selectedTab === 'tab1'">Newton <span>MUN
+                    2023</span> </div>
+            <div class="tab" (click)="selectTab('tab2')" [class.active]="selectedTab === 'tab2'"> <span>Let’s</span> MUN
+            </div>
+            <div class="tab" (click)="selectTab('tab3')" [class.active]="selectedTab === 'tab3'"><span>2023 MUN</span>
+                Conferences</div>
+            <div class="tab" (click)="selectTab('tab4')" [class.active]="selectedTab === 'tab4'">MUN <span>
+                    Tarapoto</span></div>
+
+        </div>
+
+        <div *ngIf="selectedTab === 'tab1'" class="tab-content">
+            <div>
+                <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/DSC00171.JPG',0)"
+                    src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-1.jpg" alt="Image of Enzo Porto">
+                <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',1)"
+                    src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-2.jpg" alt="Image of Enzo Porto">
+            </div>
+
+            <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',2)"
+                src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-3.jpg" alt="Image of Enzo Porto">
+            <div>
+                <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',3)"
+                    src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-4.jpg" alt="Image of Enzo Porto">
+                <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',4)"
+                    src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-5.jpg" alt="Image of Enzo Porto">
+            </div>
+
+            <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',5)"
+                src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-6.jpg" alt="Image of Enzo Porto">
+            <div>
+                <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',6)"
+                    src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-7.jpg" alt="Image of Enzo Porto">
+                <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',7)"
+                    src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-8.jpg" alt="Image of Enzo Porto">
+            </div>
+
+            <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',8)"
+                src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-9.jpg" alt="Image of Enzo Porto">
+            <div>
+                <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',9)"
+                    src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-10.jpg" alt="Image of Enzo Porto">
+                <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',10)"
+                    src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-11.jpg" alt="Image of Enzo Porto">
+            </div>
+
+            <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',11)"
+                src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-12.jpg" alt="Image of Enzo Porto">
+            <div>
+                <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',12)"
+                    src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-13.jpg" alt="Image of Enzo Porto">
+                <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',13)"
+                    src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-14.jpg" alt="Image of Enzo Porto">
+            </div>
+
+
+
+            <app-modal *ngIf="isModalOpen" (closeModalEvent)="closeModal()" [imageUrl]="modalImageUrl">
+                <img [src]="images[currentIndex]" alt="Image">
+
+                <button class=" prev"
+                    (click)="prevSlide()">
+                    <i class="arrow left"></i>
+                </button>
+                <button class=" next"
+                    (click)="nextSlide()">
+                    <i class="arrow right"></i>
+                </button>
+            </app-modal>
+
+
+        </div>
+        <div *ngIf="selectedTab === 'tab2'" class="tab-content">
+            Contenido del Tab 2
+        </div>
+        <div *ngIf="selectedTab === 'tab3'" class="tab-content">
+            Contenido del Tab 3
+        </div>
+        <div *ngIf="selectedTab === 'tab4'" class="tab-content">
+            Contenido del Tab 4
+        </div>
+
+
+
+
+    </section>
+
+
+    <app-footer></app-footer>
+</main>

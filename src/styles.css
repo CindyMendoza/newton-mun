@@ -9,23 +9,6 @@
     background-repeat: no-repeat;
 }
 
-/* .slick-track {
-    width: 100% !important;
-} */
-
-.slick-initialized {
-    /* overflow: hidden; */
-}
-.slick-slider .slick-track, .slick-slider .slick-list {
-    /* transform: translate3d(0, 0, 0) !important; */
-    /* left: 50px; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-}
-/* .slick-slider .slick-track, .slick-slider .slick-list{
-    transform: translate3d(0, 0, 0) !important;
-} */
 .slick-dots {
     bottom: -60px !important;
 }

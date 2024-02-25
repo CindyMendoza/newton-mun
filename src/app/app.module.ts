@@ -19,6 +19,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ContadorDirective } from './directives/contador.directive';
 
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { ModalComponent } from './components/gallery/modal/modal.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     FacilitiesComponent,
     ContactComponent,
     ContadorDirective,
-    AboutusComponent
+    AboutusComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,87 @@
+.bg-gallery {
+    @apply bg-green-1;
+}
+
+@media screen and (min-width: 768px) {
+    .tab.active {
+        font-size: 38px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .tab.active {
+        font-size: 16px;
+    }
+}
+
+.tabs {
+    display: flex;
+    align-items: baseline;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat-Medium';
+    font-size: 14px;
+    margin-left: auto;
+    transition: font-size 0.5s linear;
+}
+
+.tab.active {
+    order: -1;
+    margin-left: 0;
+    font-family: 'Montserrat-Bold';
+}
+
+.tab.active span {
+    @apply bg-lime-1;
+}
+
+.tab-content {
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-content img {
+    object-fit: contain;
+    margin: auto;
+}
+
+.tab-content button {
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+}
+
+.tab-content .prev {
+    left: -80px;
+
+}
+
+.tab-content .next {
+    right: -60px;
+
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 15px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
