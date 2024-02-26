@@ -2,6 +2,10 @@
     @apply bg-green-1;
 }
 
+.tabs .tab:not(.active) {
+    padding-left: 25px;
+}
+
 @media screen and (min-width: 768px) {
     .tab.active {
         font-size: 38px;
@@ -13,15 +17,84 @@
     .tab.active {
         font-size: 16px;
     }
+
+    .tab-content button {
+        top: 20% !important;
+    }
+
+    .tab-content .prev {
+        left: -14% !important;
+    }
+
+    .tab-content .next {
+        right: -14% !important;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+
+    .tab-content.tab1 .flex.flex-row>*,
+    .tab-content.tab2 .flex.flex-row:nth-child(1)>*,
+    .tab-content.tab3>div:nth-child(1) .flex.flex-row:nth-child(1)>*,
+    .tab-content.tab3>div:nth-child(5) .flex.flex-row>*,
+    .tab-content.tab4>div:not(:nth-child(1)):not(:nth-child(10))>* {
+        width: 33.3%;
+    }
+
+    .tab-content.tab2 .flex.flex-row:last-child>*,
+    .tab-content.tab3>div:nth-child(1) .flex.flex-row:nth-child(2)>*,
+    .tab-content.tab3>div:nth-child(2) .flex.flex-row>*,
+    .tab-content.tab3>div:nth-child(4) .flex.flex-row>*,
+    .tab-content.tab3>div:nth-child(6) .flex.flex-row>*,
+    .tab-content.tab3>div:nth-child(7) .flex.flex-row>*,
+    .tab-content.tab3>div:nth-child(8) .flex.flex-row>*,
+    .tab-content.tab4>div:nth-child(10)>* {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 1024px) {
+
+    .tab1>div>img:nth-child(2),
+    .tab1>div>img:nth-child(1),
+    .tab1>div>div:nth-child(1),
+    .tab1>div>div:nth-child(2),
+    .tab2>div>img:nth-child(2),
+    .tab2>div>img:nth-child(1),
+    .tab2>div>div:nth-child(1),
+    .tab2>div>div:nth-child(2),
+    .tab3 .flex.flex-row>div:nth-child(1),
+    .tab3 .flex.flex-row>div:nth-child(2),
+    .tab3 .flex.flex-row>img:nth-child(2),
+    .tab3 .flex.flex-row>img:nth-child(1),
+    .tab4 .flex.flex-row>div:nth-child(1),
+    .tab4 .flex.flex-row>div:nth-child(2),
+    .tab4 .flex.flex-row>img:nth-child(2),
+    .tab4 .flex.flex-row>img:nth-child(1) {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .tab-content img {
+        padding-right: 0px !important;
+    }
+
+
 }
 
 .tabs {
     display: flex;
     align-items: baseline;
+    padding-right: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: space-between;
 }
 
 .tab {
-    padding: 10px;
+
     cursor: pointer;
     font-family: 'Montserrat-Medium';
     font-size: 14px;
@@ -40,15 +113,26 @@
 }
 
 .tab-content {
-    padding: 10px;
+    padding-top: 10px;
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
+
+.tab-content .flex.flex-row {
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
 
 .tab-content img {
     object-fit: contain;
-    margin: auto;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    @apply max-w-full h-auto;
+
 }
 
 .tab-content button {
