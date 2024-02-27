@@ -70,8 +70,6 @@ only screen and (min-resolution: 2dppx) {
 .carousel-facts-about-newton-slider {
     max-width: 100% !important;
     width: 100% !important;
-    /* margin-left: auto !important; */
-    /* margin-right: auto !important; */
 }
 
 .facts-about-newton-slide_ngx .slide p {

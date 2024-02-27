@@ -27,7 +27,8 @@
                         src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-2.jpg" alt="Image of Enzo Porto">
                 </div>
 
-                <img loading="lazy" class="mb" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',2)"
+                <img loading="lazy" class="mb"
+                    (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',2)"
                     src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-3.jpg" alt="Image of Enzo Porto">
                 <div>
                     <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',3)"
@@ -40,7 +41,7 @@
             <div class=" flex flex-row">
                 <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',5)"
                     src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-6.jpg" alt="Image of Enzo Porto">
-                <div >
+                <div>
                     <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',6)"
                         src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-7.jpg" alt="Image of Enzo Porto">
                     <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',7)"
@@ -60,7 +61,8 @@
                         alt="Image of Enzo Porto">
                 </div>
 
-                <img loading="lazy" class="mb" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',11)"
+                <img loading="lazy" class="mb"
+                    (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',11)"
                     src="../assets/images/gallery/newton-mun-2023/gallery-nm2023-f-12.jpg" alt="Image of Enzo Porto">
                 <div>
                     <img loading="lazy" (click)="openModal('../assets/images/gallery/newton-mun-2023/IMG_2586.JPG',12)"
@@ -338,10 +340,7 @@
             </app-modal>
         </div>
         <div *ngIf="selectedTab === 'tab4'" class="tab-content tab4">
-            <div class="w-full mx-auto max-w-[1536px]  pb-3">
-                <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/Jptaj1g61ww"
-                    title="Newton College Model UN - 2023 YouTube video" allowfullscreen></iframe>
-            </div>
+
             <div class="flex flex-row">
                 <div>
                     <img loading="lazy" (click)="openModal('../assets/images/gallery/tarapoto/1.jpg',0)"
@@ -474,7 +473,10 @@
                 <img loading="lazy" (click)="openModal('../assets/images/gallery/tarapoto/38.jpg',37)"
                     src="../assets/images/gallery/tarapoto/gallery-tarapoto-f-38.jpg" alt="Image of Enzo Porto">
             </div>
-
+            <div class="w-full mx-auto max-w-[1536px]  pt-3">
+                <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/Jptaj1g61ww"
+                    title="Newton College Model UN - 2023 YouTube video" allowfullscreen></iframe>
+            </div>
 
 
             <app-modal *ngIf="isModalOpen" (closeModalEvent)="closeModal()" [imageUrl]="modalImageUrl">

@@ -109,15 +109,15 @@
 
 
 .committees-slider_ngx .slick-arrow {
-    top: 74% !important;
+    top: 30% !important;
 }
 
 .committees-slider_ngx .slick-next {
-    right: 22% !important;
+    right: 10px !important;
 }
 
 .committees-slider_ngx .slick-prev {
-    left: 22% !important;
+    left: 10px !important;
 }
 
 
@@ -147,9 +147,7 @@
         width: 5% !important;
     }
 
-    .committees-slider_ngx .slick-arrow {
-        /* top: 40% !important; */
-    }
+
 
     .committees-slider_ngx .slick-next {
         right: 5% !important;
@@ -177,20 +175,22 @@
 
 @media screen and (min-width: 1024px) {
     .the-secretariat-slide_for_ngx .slick-arrow {
-        top: 97% !important;
+        top: -130% !important;
         transform: translate(0, -260px) !important;
     }
 
-    .carousel-facts-about-newton-slider img {
-        /* width: 100% !important; */
+    .the-secretariat-slide_for_ngx .slick-prev {
+        left: 85% !important;
     }
+
+    .the-secretariat-slide_for_ngx .slick-next {
+        right: 5% !important;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
-    .carousel-facts-about-newton-slider img {
-        /* margin-left: auto;
-        margin-right: auto; */
-    }
+
 
     .schedule_table .table_2 .before\:right-\[8px\]::before {
         right: -2px !important;
@@ -202,13 +202,11 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .the-secretariat-slide_for_ngx .slick-arrow {
-        top: 90% !important;
-    }
 
-    .the-secretariat-slide_for_ngx .slick-next {
+
+    /* .the-secretariat-slide_for_ngx .slick-next {
         right: 62% !important;
-    }
+    } */
 
     .committees-slider_ngx .slick-track {
         padding-top: 30px;
@@ -232,11 +230,5 @@
 
     }
 
-    .the-secretariat-slide_for_ngx .slick-prev {
-        left: 25% !important;
-    }
 
-    .the-secretariat-slide_for_ngx .slick-next {
-        right: 68% !important;
-    }
 }

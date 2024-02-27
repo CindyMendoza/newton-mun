@@ -38,7 +38,7 @@
     .tab-content.tab2 .flex.flex-row:nth-child(1)>*,
     .tab-content.tab3>div:nth-child(1) .flex.flex-row:nth-child(1)>*,
     .tab-content.tab3>div:nth-child(5) .flex.flex-row>*,
-    .tab-content.tab4>div:not(:nth-child(1)):not(:nth-child(10))>* {
+    .tab-content.tab4>div:not(:nth-child(10)):not(:nth-child(9))>* {
         width: 33.3%;
     }
 
@@ -49,7 +49,7 @@
     .tab-content.tab3>div:nth-child(6) .flex.flex-row>*,
     .tab-content.tab3>div:nth-child(7) .flex.flex-row>*,
     .tab-content.tab3>div:nth-child(8) .flex.flex-row>*,
-    .tab-content.tab4>div:nth-child(10)>* {
+    .tab-content.tab4>div:nth-child(9)>* {
         width: 50%;
     }
 }

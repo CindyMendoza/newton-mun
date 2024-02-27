@@ -87,7 +87,7 @@
                         <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all"
                             appContador [countTo]='3' [duration]="500" easing="ease-in-out" [countInit]="1">1</span>
                         <span
-                            class="description text-white-1 text-sm md:text-xl Montserrat-Semibold">Universities</span>
+                            class="description text-white-1 text-sm md:text-xl Montserrat-Semibold"> Sponsors</span>
                     </div>
                 </div>
             </div>
@@ -95,18 +95,20 @@
 
 
     </section>
+
     <section class="container mx-auto xl:hidden">
         <div class="grid justify-center items-center">
             <img loading="lazy" src="../assets/images/home/home-letter-from-newton-enzo-porto-mb.jpg"
                 alt="Image of Enzo Porto" class="w-auto h-auto object-cover">
         </div>
     </section>
+
     <section class="px-8 flex flex-col container mx-auto home-letter-from-newton md:py-20">
         <div class="grid xl:grid-cols-3 gap-6 justify-items-center items-start">
             <div class="hidden xl:block xl:col-span-1 text-center">
                 <div class="grid justify-center items-center">
                     <img loading="lazy" src="../assets/images/home/home-letter-from-newton-enzo-porto-desk.jpg"
-                        alt="Image of Enzo Porto" class="w-auto h-auto object-cover"
+                        alt="Image of Enzo Porto" class="w-auto xl:w-[80%] h-auto object-cover"
                         srcset='../assets/images/home/home-letter-from-newton-enzo-porto-desk.jpg 1x, ../assets/images/home/home-letter-from-newton-enzo-porto-desk@2x.jpg 2x'>
 
                 </div>
@@ -140,6 +142,9 @@
                         speech, I still feel my stomach go cold, my neck gets tense, and I feel that mix of adrenaline
                         and
                         nervousness.</p>
+
+                </div>
+                <div id="textBlock2" [class.hidden]="activeBlock !== 'textBlock2'">
                     <p class="Montserrat-Regular text-xs md:text-sm mb-4">So what is the difference? How have these six
                         years
                         in MUN helped me grow as a person? The
@@ -157,8 +162,6 @@
                         don’t
                         fail when your plan is not the best, because quite honestly it never will be (another important
                         lesson from MUN). You fail only if you let temporary losses prevent you from long-term wins.</p>
-                </div>
-                <div id="textBlock2" [class.hidden]="activeBlock !== 'textBlock2'">
                     <p class="Montserrat-Regular text-xs md:text-sm mb-4">
                         Now, I would like to address all of the faculty advisors. We know many of you have children and
                         partners at home, which you left behind to be at the conference for those two days. And even if
@@ -228,7 +231,7 @@
     </section>
     <section class="home-video-yt px-8 container mx-auto grid justify-items-center items-center">
 
-        <div class="w-full mx-auto max-w-[1536px] py-12 ">
+        <div class="w-[80%] mx-auto max-w-[1536px] py-12 ">
             <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/q_vd2tSLIdI"
                 title="Newton College Model UN - 2023 YouTube video" allowfullscreen></iframe>
         </div>
