@@ -25,7 +25,7 @@ export class CommitteesComponent {
     cssEase: 'linear',
     responsive: [
       {
-        breakpoint: 1280,
+        breakpoint: 767,
         settings: {
           slidesToShow: 3,
           centerPadding: '0px',

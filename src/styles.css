@@ -81,32 +81,26 @@
     right: 60% !important;
 }
 
-.committees-slider_ngx .slick-dots {
-    top: 56%;
-    bottom: auto !important;
-}
 
-.committees-slider_ngx .slick-track .slide>div {
-    height: 750px;
-    padding-top: 30px;
-}
+
+
+
 
 .committees-slider_ngx .slick-track .slide:not(.slick-center) .text-slider-hide {
     display: none;
 }
 
 .committees-slider_ngx .slick-current img {
-    width: 241px !important;
+    transform: scale(1.5);
 }
 
-.committees-slider_ngx .slick-current>div>div+div {
-    width: 550px;
-}
 
-.committees-slider_ngx .slide>div>div:first-child {
-    height: 373px !important;
-}
 
+
+
+.committees-slider_ngx .slick-center.slick-current>div>div:nth-child(1) {
+    height: 180px;
+}
 
 .committees-slider_ngx .slick-arrow {
     top: 30% !important;
@@ -121,6 +115,15 @@
 }
 
 
+.committees-slider_ngx .slide img {
+    margin: auto;
+    max-width: 80%;
+}
+
+.committees-slider_ngx .slick-track {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
 
 @media screen and (max-width: 1023px) {
     .facts-about-newton-slide .slide {
@@ -140,14 +143,18 @@
 
 @media screen and (max-width: 767px) {
     .committees-slider_ngx .slick-current>div>div+div {
-        width: 75vw !important;
+        width: 85vw;
+        margin-bottom: 30px;
     }
 
-    .committees-slider_ngx .slick-current {
-        width: 5% !important;
+    .committees-slider_ngx .slick-track {
+        padding-top: 35px;
+        padding-bottom: 35px;
     }
 
-
+    .committees-slider_ngx .slick-arrow {
+        top: 20% !important;
+    }
 
     .committees-slider_ngx .slick-next {
         right: 5% !important;
@@ -158,18 +165,13 @@
     }
 
     .committees-slider_ngx .slick-dots {
-        top: 55%;
+        top: 45%;
         bottom: auto !important;
     }
 
-    .committees-slider_ngx .slick-track .slide>div {
-        height: 700px;
-        padding-top: 0px;
-    }
-
-    .committees-slider_ngx .slick-list.draggable {
-        height: 700px;
-        padding-top: 0px;
+    .committees-slider_ngx .slick-center.slick-current>div>div:nth-child(2) {
+        height: 180px !important;
+        transform: translate(-35%, -0%);
     }
 }
 
@@ -187,10 +189,32 @@
         right: 5% !important;
     }
 
+    .committees-slider_ngx .slick-center.slick-current>div>div:nth-child(2) {
+        height: 150px !important;
+        transform: translate(-35%, 0%) !important;
+    }
+
+    .committees-slider_ngx .slick-dots {
+        top: 45% !important;
+        bottom: auto !important;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
+    .committees-slider_ngx .slick-current>div>div+div {
+        width: 750px;
+        margin-bottom: 30px;
+    }
 
+    .committees-slider_ngx .slide img {
+        width: 40% !important;
+    }
+
+    .committees-slider_ngx .slick-dots {
+        top: 43%;
+        bottom: auto !important;
+    }
 
     .schedule_table .table_2 .before\:right-\[8px\]::before {
         right: -2px !important;
@@ -199,21 +223,23 @@
     .schedule_table .table_2 .after\:right-\[10px\]::after {
         right: 0px !important;
     }
+
+    .committees-slider_ngx .slick-center.slick-current>div>div:nth-child(2) {
+        height: 150px !important;
+        transform: translate(-41%, 0%);
+    }
 }
 
 @media screen and (min-width: 1280px) {
-
-
-    /* .the-secretariat-slide_for_ngx .slick-next {
-        right: 62% !important;
-    } */
-
-    .committees-slider_ngx .slick-track {
-        padding-top: 30px;
-        padding-bottom: 30px;
+    .committees-slider_ngx .slick-center.slick-current>div>div:nth-child(2) {
+        height: 150px !important;
+        /* transform: translate(-38%, 62%) !important; */
     }
 
-
+    .committees-slider_ngx .slick-dots {
+        top: 49% !important;
+        bottom: auto !important;
+    }
 }
 
 @media screen and (min-width: 1536px) {
@@ -230,5 +256,17 @@
 
     }
 
+    .committees-slider_ngx .slick-center.slick-current>div>div:nth-child(2) {
+        transform: translate(-35%, 20%) !important;
+    }
 
+    .committees-slider_ngx .slick-dots {
+        top: 56% !important;
+        bottom: auto !important;
+    }
+
+}
+
+.committees-slider_ngx .slide img {
+    width: 50%;
 }

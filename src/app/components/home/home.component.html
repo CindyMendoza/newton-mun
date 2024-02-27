@@ -18,7 +18,7 @@
                     April 20th
                     & 21st!</p>
                 <a class="rounded-full bg-green-5 px-8 md:px-12  text-white-1 Montserrat-Bold py-1 md:py-2 transition-all hover:bg-green-1 text-sm md:text-xl"
-                    href="#">
+                routerLink="/apply">
                     Apply
                 </a>
             </div>
@@ -86,8 +86,7 @@
                     <div class="char flex flex-col items-start justify-center counters">
                         <span class="num Montserrat-Bold text-white-1 text-2xl md:text-5xl md:pb-1 transition-all"
                             appContador [countTo]='3' [duration]="500" easing="ease-in-out" [countInit]="1">1</span>
-                        <span
-                            class="description text-white-1 text-sm md:text-xl Montserrat-Semibold"> Sponsors</span>
+                        <span class="description text-white-1 text-sm md:text-xl Montserrat-Semibold"> Sponsors</span>
                     </div>
                 </div>
             </div>
@@ -235,6 +234,21 @@
             <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/q_vd2tSLIdI"
                 title="Newton College Model UN - 2023 YouTube video" allowfullscreen></iframe>
         </div>
+    </section>
+    <section class="home-sponsor px-8 container mx-auto pb-12">
+        <h2 class="Montserrat-Bold text-center mb-2 text-[24px] md:text-[30px]">Sponsors</h2>
+        <div class="flex justify-center">
+
+            <picture class="inline-block">
+                <source media="(max-width: 767px)"
+                    srcset='../assets/images/home/home-sponsors-puc-blue-ulima-mob.png 1x, ../assets/images/home/home-sponsors-puc-blue-ulima-mob@2x.png 2x'>
+                <source media="(min-width: 768px)"
+                    srcset='../assets/images/home/home-sponsors-puc-blue-ulima-desk.png 1x, ../assets/images/home/home-sponsors-puc-blue-ulima-desk@2x.png 2x'>
+                <img loading="lazy" src="../assets/images/home/home-sponsors-puc-blue-ulima-mob.png"
+                    alt="Image of Sponsors" class="w-auto object-contain">
+            </picture>
+        </div>
+
     </section>
     <app-footer></app-footer>
 </main>
