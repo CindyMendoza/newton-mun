@@ -30,6 +30,7 @@ const routes: Routes = [
   { path: 'schedule', component: ScheduleComponent },
   { path: 'aboutus', component: AboutusComponent },
   { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 
