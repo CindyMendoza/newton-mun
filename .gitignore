@@ -45,3 +45,4 @@ Thumbs.db
 # Angular
 /src/environments/*.ts
 .env
+command.md

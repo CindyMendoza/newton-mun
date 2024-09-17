@@ -1,27 +1,15 @@
-# Mun
+# Informative Site
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+## Description
+This interactive web platform is a dedicated space to promote school events, providing detailed and up-to-date information.
 
-## Development server
+## Technologies
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project uses the following technologies:
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[![Angular](https://img.shields.io/badge/Angular-16.1-brightgreen)](https://angular.io/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.1.3-blue)](https://www.typescriptlang.org/)
+[![jQuery](https://img.shields.io/badge/jQuery-3.7.1-orange)](https://jquery.com/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.2-purple)](https://getbootstrap.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4.1-pink)](https://tailwindcss.com/)
+[![Slick Carousel](https://img.shields.io/badge/Slick%20Carousel-1.8.1-blue)](https://kenwheeler.github.io/slick/)
