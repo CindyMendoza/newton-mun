@@ -6,7 +6,6 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -27,7 +26,6 @@ import { ApplyComponent } from './components/apply/apply.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent,
     NavbarComponent,
     FooterComponent,
     ScheduleComponent,

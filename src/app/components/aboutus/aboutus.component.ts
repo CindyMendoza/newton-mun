@@ -1,6 +1,4 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-// import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-aboutus',
@@ -15,8 +13,6 @@ export class AboutusComponent {
     infinite: true,
     dots: true,
     arrows: true,
-    // transformEnabled: false,
-    // variableWidth:true,
     responsive: [
       {
         breakpoint: 1023,
@@ -37,7 +33,6 @@ export class AboutusComponent {
     infinite: true,
     dots: false,
     arrows: true,
-    // variableWidth:true,
     responsive: [
       {
         breakpoint: 1023,
@@ -89,18 +84,6 @@ export class AboutusComponent {
     },
   };
 
-  slickInit(e: any) {
-    console.log('slick initialized');
-  }
-  breakpoint(e: any) {
-    console.log('breakpoint');
-  }
-  afterChange(e: any) {
-    console.log('afterChange');
-  }
-  beforeChange(e: any) {
-    console.log('beforeChange');
-  }
   constructor() {}
   ngOnInit(): void {}
 }

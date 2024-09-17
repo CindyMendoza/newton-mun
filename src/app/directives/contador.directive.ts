@@ -7,7 +7,6 @@ import {
   OnInit,
   Renderer2,
 } from '@angular/core';
-import { debounceTime, fromEvent, takeUntil } from 'rxjs';
 import { Subject } from 'rxjs/internal/Subject';
 
 @Directive({
@@ -59,8 +58,6 @@ export class ContadorDirective implements OnInit, OnDestroy {
     const initialValue =
       this.countInit || (textContent ? parseInt(textContent, 10) : 0);
 
-    // const initialValue =
-    //   this.countInit || parseInt(this.counterElement.textContent, 10) || 0;
     const delta = this.countTo - initialValue;
     const startTime = Date.now();
 

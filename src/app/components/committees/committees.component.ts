@@ -12,7 +12,7 @@ export class CommitteesComponent {
 
  
   slideConfig1 = {
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
     infinite: true,
@@ -27,25 +27,14 @@ export class CommitteesComponent {
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           centerPadding: '0px',
         },
       },
     ],
   };
   slickInit(e: any) {
-    console.log(e.slick.slickCurrentSlide());
-    const slickInstance = e.slick;
-    const siguienteSlide = slickInstance.slickNext();
-    console.log(e.slick.slickNext());
+   
   }
-  breakpoint(e: any) {
-    console.log('breakpoint');
-  }
-  afterChange(e: any) {
-    console.log('afterChange');
-  }
-  beforeChange(e: any) {
-    console.log('beforeChange');
-  }
+  
 }

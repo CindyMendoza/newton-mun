@@ -28,9 +28,7 @@
     }
 
     .facts-about-newton-slide_ngx .slide > div {
-        /* height: 215px; */
         height: 350px;
-        /* @apply object-cover; */
     }
 
 }

@@ -3,7 +3,6 @@
         background-image: url('/assets/images/committees/newton-committess-bg-desk-v3.jpg');
         background-position: top;
         background-size: cover;
-        /* padding-bottom: 30vw; */
 
     }
 }
@@ -13,8 +12,6 @@
     .bg-committees {
         background-image: url('/assets/images/committees/newton-committess-bg-desk-v3.jpg');
         background-position: top;
-        /* background-size: 100% auto;
-        padding-bottom: 55vw; */
     }
 }
 
