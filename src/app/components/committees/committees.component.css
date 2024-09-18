@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
     .bg-committees {
-        background-image: url('/assets/images/committees/newton-committess-bg-desk-v3.jpg');
+        background-image: url('/newton-mun/assets/images/committees/newton-committess-bg-desk-v3.jpg');
         background-position: top;
         background-size: cover;
 
@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 767px) {
     .bg-committees {
-        background-image: url('/assets/images/committees/newton-committess-bg-desk-v3.jpg');
+        background-image: url('/newton-mun/assets/images/committees/newton-committess-bg-desk-v3.jpg');
         background-position: top;
     }
 }
@@ -23,7 +23,7 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
     .bg-committees {
-        background-image: url('/assets/images/committees/newton-committess-bg-mob-v3@2x.jpg');
+        background-image: url('/newton-mun/assets/images/committees/newton-committess-bg-mob-v3@2x.jpg');
     }
 }
 
@@ -34,6 +34,6 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
     .bg-committees {
-        background-image: url('/assets/images/committees/newton-committess-bg-desk-v3@2x.jpg');
+        background-image: url('/newton-mun/assets/images/committees/newton-committess-bg-desk-v3@2x.jpg');
     }
 } 

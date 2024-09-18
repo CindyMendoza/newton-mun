@@ -9,7 +9,7 @@
 
 @media screen and (min-width: 768px) {
     .bg-aboutus {
-        background-image: url('/assets/images/aboutus/header-bg-aboutus-newton-mun-desk@2x.jpg');
+        background-image: url('/newton-mun/assets/images/aboutus/header-bg-aboutus-newton-mun-desk@2x.jpg');
         background-position: top;
         background-size: cover;
         padding-bottom: 50vw;
@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 767px) {
     .bg-aboutus {
-        background-image: url('/assets/images/aboutus/header-bg-aboutus-newton-mun-mob@2x.jpg');
+        background-image: url('/newton-mun/assets/images/aboutus/header-bg-aboutus-newton-mun-mob@2x.jpg');
         background-position: top;
         background-size: cover;
         padding-bottom: 65vw;
@@ -40,7 +40,7 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
     .bg-aboutus {
-        background-image: url('/assets/images/aboutus/header-bg-aboutus-newton-mun-mob@2x.jpg');
+        background-image: url('/newton-mun/assets/images/aboutus/header-bg-aboutus-newton-mun-mob@2x.jpg');
     }
 }
 
@@ -51,7 +51,7 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
     .bg-aboutus {
-        background-image: url('/assets/images/aboutus/header-bg-aboutus-newton-mun-desk@2x.jpg');
+        background-image: url('/newton-mun/assets/images/aboutus/header-bg-aboutus-newton-mun-desk@2x.jpg');
     }
 }
 

@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
     .bg-schedule {
-        background-image: url('/assets/images/schedule/header-bg-schedule-newton-mun-desk@2x.jpg');
+        background-image: url('/newton-mun/assets/images/schedule/header-bg-schedule-newton-mun-desk@2x.jpg');
         background-position: left top;
         height: 100vh;
     }
@@ -11,7 +11,7 @@
 
 @media screen and (max-width: 767px) {
     .bg-schedule {
-        background-image: url('/assets/images/schedule/header-bg-schedule-newton-mun-mob@2x.jpg');
+        background-image: url('/newton-mun/assets/images/schedule/header-bg-schedule-newton-mun-mob@2x.jpg');
         background-position: left top;
     }
     .schedule_table table {
@@ -27,7 +27,7 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
     .bg-schedule {
-        background-image: url('/assets/images/schedule/header-bg-schedule-newton-mun-mob@2x.jpg');
+        background-image: url('/newton-mun/assets/images/schedule/header-bg-schedule-newton-mun-mob@2x.jpg');
     }
 }
 
@@ -38,7 +38,7 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
     .bg-schedule {
-        background-image: url('/assets/images/schedule/header-bg-schedule-newton-mun-desk@2x.jpg');
+        background-image: url('/newton-mun/assets/images/schedule/header-bg-schedule-newton-mun-desk@2x.jpg');
     }
 }
 
